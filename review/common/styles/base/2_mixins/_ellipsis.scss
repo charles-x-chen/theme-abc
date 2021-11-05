@@ -1,0 +1,73 @@
+@mixin ellipsis($width: 100%) {
+	display: inline-block;
+	max-width: $width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+}
+
+
+// TODO
+// https://github.com/Merri/ellipsis-lastline
+@mixin set-ellipsis($line) {
+	// single line line-clamp
+	@if (strip-unit($line) == 1) {
+		@include ellipsis;
+		display: block;
+	}
+
+	// only if it needs to be on more than 1 line
+	@else {
+		@if (strip-unit($line) > 1) {
+			@include remove-ellipsis;
+			@include line-clamp {
+				@include ellipsis;
+				display: block;
+
+				// multiline
+				-webkit-line-clamp: $line;
+				-webkit-box-orient: vertical;
+				display: -webkit-box;
+				max-width: 100%;
+				overflow: hidden;
+				transform: translateX(0);	// fix the ellipsis position on viewport resize
+				white-space: normal;
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+@mixin remove-ellipsis {
+	@include line-clamp {
+		-webkit-line-clamp: unset;
+		-webkit-box-orient: unset;
+		display: block;
+		transform: none;
+	}
+
+	display: block;
+	max-height: none;	// TO BE TESTED
+	overflow: initial;	// auto?
+	text-overflow: clip;
+	white-space: normal;
+	word-wrap: normal;
+}
+
+
+@mixin set-ellipsis-for-paragraph($paragraph, $line: 2) {
+	display: none;
+
+	@for $i from 0 through $paragraph {
+		&:nth-child(#{$i}) {
+			@include remove-ellipsis;
+			display: block;
+		}
+	}
+
+	&:nth-child(#{$paragraph}) {
+		@include set-ellipsis($line);
+	}
+}

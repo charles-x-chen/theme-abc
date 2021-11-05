@@ -1,0 +1,28 @@
+.featured-content {
+	background-color: #46a916;
+	color: $u-white;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+		max-width: 128rem;
+		padding: 6rem 1.5rem;
+	}
+
+	&.type-a {
+		.featured-content-image {
+			grid-row: 1;
+			order: 0;
+		}
+
+		.featured-content-copy {
+			margin-left: 5%;
+		}
+	}
+
+	&-copy {
+		align-items: center;
+		display: flex;
+	}
+}

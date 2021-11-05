@@ -1,0 +1,103 @@
+@mixin component-borders {
+	border: $border-thickness solid $color-black;
+	border-radius: $border-thickness;
+	padding: $grid-gutter-ver-zero $grid-gutter-hor-zero;
+
+	@include media-phablet {
+		padding: $grid-gutter-ver-phablet $grid-gutter-hor-phablet;
+	}
+
+	@include media-tablet {
+		padding: $grid-gutter-ver-tablet $grid-gutter-hor-tablet;
+	}
+
+	@include media-desktop {
+		padding: $grid-gutter-ver-desktop $grid-gutter-hor-desktop;
+	}
+
+	@include media-desktop-wide {
+		padding: $grid-gutter-ver-desktop-wide $grid-gutter-hor-desktop-wide;
+	}
+}
+
+@mixin components-layout {
+	padding-bottom: $grid-gutter-ver-zero;
+	padding-left: $grid-gutter-hor-zero;
+
+	@include media-phablet {
+		padding-bottom: $grid-gutter-ver-phablet;
+		padding-left: $grid-gutter-hor-phablet;
+	}
+
+	@include media-tablet {
+		padding-bottom: $grid-gutter-ver-tablet;
+		padding-left: $grid-gutter-hor-tablet;
+	}
+
+	@include media-desktop {
+		padding-bottom: $grid-gutter-ver-desktop;
+		padding-left: $grid-gutter-hor-desktop;
+	}
+
+	@include media-desktop-wide {
+		padding-bottom: $grid-gutter-ver-desktop-wide;
+		padding-left: $grid-gutter-hor-desktop-wide;
+	}
+}
+
+
+@mixin component-layout {
+	margin-top: $grid-gutter-ver-zero;
+
+	@include media-phablet {
+		margin-top: $grid-gutter-ver-phablet;
+	}
+
+	@include media-tablet {
+		margin-top: $grid-gutter-ver-tablet;
+	}
+
+	@include media-desktop {
+		margin-top: $grid-gutter-ver-desktop;
+	}
+
+	@include media-desktop-wide {
+		margin-top: $grid-gutter-ver-desktop-wide;
+	}
+}
+
+
+@mixin component-container-layout {
+	// nothing atm
+}
+
+
+@mixin component-item-layout {
+	margin-top: $grid-gutter-ver-zero;
+	padding-right: $grid-gutter-hor-zero;
+
+	@include media-phablet {
+		margin-top: $grid-gutter-ver-phablet;
+		padding-right: $grid-gutter-hor-phablet;
+	}
+
+	@include media-tablet {
+		margin-top: $grid-gutter-ver-tablet;
+		padding-right: $grid-gutter-hor-tablet;
+	}
+
+	@include media-desktop {
+		margin-top: $grid-gutter-ver-desktop;
+		padding-right: $grid-gutter-hor-desktop;
+	}
+
+	@include media-desktop-wide {
+		margin-top: $grid-gutter-ver-desktop-wide;
+		padding-right: $grid-gutter-hor-desktop-wide;
+	}
+}
+
+
+@mixin component-background {
+	background-color: transparent;
+}

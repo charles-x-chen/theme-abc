@@ -1,0 +1,127 @@
+// JS
+
+@mixin js {
+	.js & {
+		@content;
+	}
+}
+
+@mixin no-js {
+	.no-js & {
+		@content;
+	}
+}
+
+
+// filter
+
+@mixin filter-support {
+	.filter & {
+		@content;
+	}
+}
+
+@mixin no-filter-support {
+	.no-filter & {
+		@content;
+	}
+}
+
+
+// flexbox
+
+@mixin flexbox {
+	.flexbox & {
+		@content;
+	}
+}
+
+@mixin no-flexbox {
+	.no-flexbox & {
+		@content;
+	}
+}
+
+
+// touch
+
+@mixin is-touch {
+	.is-touch & {
+		@content;
+	}
+}
+
+@mixin is-not-touch {
+	.is-not-touch & {
+		@content;
+	}
+}
+
+
+// iOS
+
+@mixin is-ios {
+	.is-ios & {
+		@content;
+	}
+}
+
+@mixin is-not-ios {
+	.is-not-ios & {
+		@content;
+	}
+}
+
+
+// Safari
+
+@mixin is-safari {
+	.is-safari & {
+		@content;
+	}
+}
+
+@mixin is-not-safari {
+	.is-not-safari & {
+		@content;
+	}
+}
+
+
+// position
+
+@mixin is-top {
+	.is-top & {
+		@content;
+	}
+}
+
+@mixin is-not-top {
+	.is-not-top & {
+		@content;
+	}
+}
+
+
+// ready
+
+@mixin is-ready {
+	.is-ready & {
+		@content;
+	}
+}
+
+
+// line clamp
+
+@mixin line-clamp {
+	.line-clamp & {
+		@content;
+	}
+}
+
+@mixin no-line-clamp {
+	.no-line-clamp & {
+		@content;
+	}
+}

@@ -1,0 +1,36 @@
+%socialshare-toolbox {
+	text-align: $socialshare-toolbox-text-align;
+	span{
+		display: $socialshare-toolbox-display;
+	}
+}
+
+%socialshare-primary-button-link {
+	display: $socialshare-primary-button-display;
+	margin-left: $socialshare-primary-button-margin-left;
+	margin-right: $socialshare-primary-button-margin-right;
+	cursor: $socialshare-primary-button-cursor;	
+	background-size: $socialshare-primary-button-background;
+	width: $socialshare-primary-button-width;
+	height: $socialshare-primary-button-width;
+	transition: $socialshare-primary-button-transition;	
+
+	&.addthis_button_facebook{
+		background: url("../resources/icons/facebook.svg") no-repeat center;
+		&:hover{
+			background: url("../resources/icons/facebook-black.svg") no-repeat center;;
+		}
+	}
+	&.addthis_button_twitter{
+		background: url("../resources/icons/twitter.svg") no-repeat center;
+		&:hover{
+			background: url("../resources/icons/twitter-black.svg") no-repeat center;;
+		}
+	}
+	&.addthis_button_email{
+		background: url("../resources/icons/email.svg") no-repeat center;
+		&:hover{
+			background: url("../resources/icons/email-black.svg") no-repeat center;;
+		}
+	}
+}

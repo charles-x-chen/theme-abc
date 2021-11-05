@@ -1,0 +1,17 @@
+// @import './variables';
+@import './constants';
+@import './variables';
+@import './root';
+
+// replace ID with a global class
+#owb-brand {
+	background-color: #289ecc;
+}
+
+#owg-brand {
+	background-color: #46a916;
+}
+
+#owp-brand {
+	background-color: #ff527f;
+}

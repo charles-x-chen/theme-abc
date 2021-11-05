@@ -1,0 +1,173 @@
+// Global typography styles
+$header-global-color: null;
+$header-global-line-height: 1.2;
+$header-global-font-family: null;
+$header-global-font-weight: null;
+$header-global-text-transform: null;
+$header-global-letter-spacing: null;
+$header-global-margin-top: 2.5em;
+$header-global-margin-bottom: 0.4em;
+$header-global-font-size-h1: null;
+$header-global-font-size-h2: null;
+$header-global-font-size-h3: null;
+$header-global-font-size-h4: null;
+$header-global-font-size-h5: null;
+$header-global-font-size-h6: null;
+$header-global-font-weight-h4: null;
+
+$paragraph-global-margin-top: 0.5em;
+$paragraph-global-margin-bottom: 1.5em;
+
+$list-global-margin-top: 0.5em;
+$list-global-margin-bottom: 1.5em;
+$list-nested-global-margin-top: 0;
+$list-nested-global-margin-bottom: 0.5em;
+
+$anchor-global-color: null;
+$anchor-global-text-decoration: null;
+$anchor-global-color-hover: null;
+$anchor-global-transition-hover: null;
+$anchor-global-text-decoration-hover: null;
+
+// Private header style 1
+$header-primary-color: $font-global-color;
+$header-primary-font-size: null;
+$header-primary-font-family: null;
+$header-primary-font-weight: null;
+$header-primary-line-height: null;
+$header-primary-text-transform: null;
+$header-primary-letter-spacing: null;
+$header-primary-text-decoration: null;
+$header-primary-font-weight: null;
+
+$header-primary-color-hover: null;
+$header-primary-transition-hover: null;
+$header-primary-text-decoration-hover: null;
+
+// Private header style 2
+$header-secondary-color: $font-global-color;
+$header-secondary-font-size: null;
+$header-secondary-font-family: null;
+$header-secondary-font-weight: null;
+$header-secondary-line-height: null;
+$header-secondary-text-transform: null;
+$header-secondary-letter-spacing: null;
+$header-secondary-text-decoration: null;
+$header-secondary-font-weight: null;
+
+$header-secondary-color-hover: null;
+$header-secondary-transition-hover: null;
+$header-secondary-text-decoration-hover: null;
+
+// Private header style 3
+$header-tertiary-color: $font-global-color;
+$header-tertiary-font-size: null;
+$header-tertiary-font-family: null;
+$header-tertiary-font-weight: null;
+$header-tertiary-line-height: null;
+$header-tertiary-text-transform: null;
+$header-tertiary-letter-spacing: null;
+$header-tertiary-text-decoration: null;
+$header-tertiary-font-weight: null;
+
+$header-tertiary-color-hover: null;
+$header-tertiary-transition-hover: null;
+$header-tertiary-text-decoration-hover: null;
+
+// Private text style 1
+$text-primary-color: $font-global-color;
+$text-primary-font-size: null;
+$text-primary-font-family: null;
+$text-primary-line-height: null;
+$text-primary-text-transform: null;
+$text-primary-letter-spacing: null;
+$text-primary-text-decoration: null;
+$text-primary-font-weight: null;
+
+$text-primary-color-hover: null;
+$text-primary-transition-hover: null;
+$text-primary-text-decoration-hover: null;
+
+// Private text style 2
+$text-secondary-color: $font-global-color;
+$text-secondary-font-size: null;
+$text-secondary-font-family: null;
+$text-secondary-line-height: null;
+$text-secondary-text-transform: null;
+$text-secondary-letter-spacing: null;
+$text-secondary-text-decoration: null;
+$text-secondary-font-weight: null;
+
+$text-secondary-color-hover: null;
+$text-secondary-transition-hover: null;
+$text-secondary-text-decoration-hover: null;
+
+// Private text style 3
+$text-tertiary-color: $font-global-color;
+$text-tertiary-font-size: null;
+$text-tertiary-font-family: null;
+$text-tertiary-line-height: null;
+$text-tertiary-text-transform: null;
+$text-tertiary-letter-spacing: null;
+$text-tertiary-text-decoration: null;
+$text-tertiary-font-weight: null;
+
+$text-tertiary-color-hover: null;
+$text-tertiary-transition-hover: null;
+$text-tertiary-text-decoration-hover: null;
+
+// Private link style 1
+$anchor-primary-color: $font-global-color;
+$anchor-primary-text-decoration: null;
+
+$anchor-primary-color-hover: null;
+$anchor-primary-transition-hover: null;
+$anchor-primary-text-decoration-hover: null;
+
+// Private link style 2
+$anchor-secondary-color: $font-global-color;
+$anchor-secondary-text-decoration: null;
+
+$anchor-secondary-color-hover: null;
+$anchor-secondary-transition-hover: null;
+$anchor-secondary-text-decoration-hover: null;
+
+// Private link style 3
+$anchor-tertiary-color: $font-global-color;
+$anchor-tertiary-text-decoration: null;
+
+$anchor-tertiary-color-hover: null;
+$anchor-tertiary-transition-hover: null;
+$anchor-tertiary-text-decoration-hover: null;
+
+$heading-variant-product-copy-text-align: center;
+$heading-variant-product-copy-font-size:null;
+$heading-variant-product-copy-line-height: null;
+$heading-variant-product-copy-text-transform:null;
+$heading-variant-product-copy-text-color: null;
+
+$text-variant-product-copy-text-align: center;
+$text-variant-product-copy-font-size:null;
+$text-variant-product-copy-line-height: null;
+$text-variant-product-copy-text-transform:null;
+$text-variant-product-copy-color: null;
+
+
+$text-form-widget-overflow:auto;
+$text-form-widget-max-width:500px;
+$text-form-widget-width:100%;
+$text-form-widget-margin:0 auto;
+$text-form-widget-padding:40px 15px 0px;
+$text-form-widget-heading-border-bottom: 1px solid #dbdbdb;
+$text-form-widget-heading-font-size:1.6rem;
+$text-form-widget-heading-font-weight:700;
+
+$text-form-widget-heading-padding-bottom:5px;
+$text-form-widget-heading-line-height:1.1;
+$text-form-widget-heading-margin-top:0px;
+$text-form-widget-desc-padding-top:40px;
+$text-form-widget-desc-line-height:1;
+$text-form-widget-desc-font-size:1.5rem;
+
+$text-form-widget-desc-padding-bottom:18px;
+$text-form-widget-desc-margin:0px;

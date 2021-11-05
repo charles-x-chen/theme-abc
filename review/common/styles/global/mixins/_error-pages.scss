@@ -1,0 +1,26 @@
+%errorpage__container--primary{
+    padding: $error-page-container-padding;
+    text-align: $error-page-container-text-align;
+}
+
+%errorpage__textcomp--primary{
+    h1{
+        font-size: $error-page-heading-font-size;
+        color: $error-page-heading-color;
+        margin-bottom: $error-page-text-margin-bottom;
+        margin-top: $error-page-text-margin-top;
+    }
+    p{
+        margin-bottom: $error-page-text-margin-bottom;
+        font-size: $error-page-text-font-size;
+        color: $error-page-text-color;
+    }
+}
+
+%errorpage__button--primary{
+    @extend %button--secondary;
+    margin-top: $error-page-button-margin-top;
+    span{
+        font-family: $font-primary;
+    }
+}

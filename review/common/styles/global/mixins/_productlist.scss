@@ -1,0 +1,56 @@
+%productlist__image--primary{
+    margin-bottom: $productlist-primary-image-margin-bottom;
+    @media only screen and (max-width: 768px) {
+        width: $productlist-primary-image-width;
+        float: $productlist-primary-image-float;
+        padding-right: $productlist-primary-image-padding-right;
+    }
+}
+
+%productlist__content--primary{
+    position: $productlist-primary-content-position;
+    left: $productlist-primary-content-left;
+    letter-spacing: $productlist-primary-content-letter-spacing;
+    transform: $productlist-primary-content-transform;
+    @media only screen and (max-width: 768px) {
+        width: $productlist-primary-content-width;
+        float: $productlist-primary-content-float;
+        text-align: $productlist-primary-content-text-align;
+    }
+}
+
+%productlist__description--primary{
+    font-size: $productlist-primary-description-font-size;
+    margin-bottom: $productlist-primary-description-margin-bottom;
+    color: $productlist-primary-description-color;
+    @media only screen and (max-width: 768px) {
+     font-size: $productlist-primary-description-mobile-font-size;
+  }
+}
+
+%productlist__description_text{
+    font-size:$productlist-primary-description-font-size;
+    text-transform: $productlist-primary-description-letter-spacing;
+    letter-spacing: $productlist-primary-description-text-transform;
+    @include media-tablet {
+        font-size:$productlist-primary-description-font-size;
+    }
+}
+
+%productlist__description-sub--primary{
+    font-size: $productlist-primary-description-sub-font-size;
+    @media only screen and (max-width: 768px) {
+    font-size: $productlist-primary-description-sub-mobile-font-size;
+ }
+}
+
+%productlist__title--primary{
+    font-size: $productlist-primary-title-font-size;
+    letter-spacing: $productlist-primary-title-letter-spacing;
+    margin-bottom: $productlist-primary-title-margin-bottom;
+} 
+
+%productlist__title-link--primary{
+        font-weight: $productlist-primary-title-link-font-weight;
+        text-decoration: $productlist-primary-title-link-text-decoration;
+}

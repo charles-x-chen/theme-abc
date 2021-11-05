@@ -1,0 +1,19 @@
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+) !default;
+
+$base-font: $primary-brand-font !default;
+$base-font-size: $u-body-desktop !default;
+$base-line-height: 1.618 !default;
+
+$bg-color: $u-white;
+$txt-color: $u-black;
+
+$btn-color: $u-black;
+$btn-border-width: 0.2rem;
+$btn-color-inverse: $u-white;

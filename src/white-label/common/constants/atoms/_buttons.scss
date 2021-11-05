@@ -1,0 +1,56 @@
+a,
+button {
+	&.btn {
+		align-self: center;
+		display: inline-block;
+		padding: 1rem 2rem;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.5s;
+		user-select: none;
+
+		&-sm {
+			font-size: 1.3rem;
+			padding: 0.5rem 1rem;
+		}
+
+		&-lg {
+			font-size: 2rem;
+			padding: 2rem 4rem;
+		}
+	}
+
+	&.type-a {
+		background-color: $btn-color;
+		border: $btn-border-width solid transparent;
+		color: $btn-color-inverse;
+
+		&:hover {
+			background-color: lighten($btn-color, 90%);
+			color: darken($btn-color-inverse, 90%);
+		}
+	}
+
+	&.type-b {
+		background-color: transparent;
+		border: $btn-border-width solid $btn-color;
+		color: $btn-color;
+
+		&:hover {
+			background-color: darken($btn-color, 80%);
+			color: lighten($btn-color, 80%);
+		}
+	}
+
+	&.type-c {
+		color: $btn-color;
+		font-weight: normal;
+		text-decoration: underline;
+		transition: all 0.1s;
+
+		&:hover {
+			color: lighten($btn-color, 50%);
+			text-decoration: none;
+		}
+	}
+}

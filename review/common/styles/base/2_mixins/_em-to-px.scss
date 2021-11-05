@@ -1,0 +1,3 @@
+@function em-to-px($em, $coeff: 1) {
+	@return (strip-unit($em) * strip-unit($base-font-size)) * $coeff * 1px;
+}

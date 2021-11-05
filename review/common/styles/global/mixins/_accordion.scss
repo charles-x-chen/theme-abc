@@ -1,0 +1,116 @@
+%accordion__item--primary {
+    position: $accordion-item-primary-position;
+    max-width:  $accordion-item-primary-width;
+    margin: $accordion-item-primary-margin;
+    border-bottom: $accordion-primary-bottom-border;
+}
+
+%accordion__header--primary {
+    margin: $accordion-header-primary-margin;
+    padding-top: $accordion-header-primary-padding-top;
+    padding-bottom: $accordion-header-primary-padding-bottom;
+}
+
+%accordion__panel--primary {
+    font-family: $accordion-panel-primary-font-family;
+    font-size: $accordion-panel-primary-font-size;
+    color: $accordion-panel-primary-color;
+    margin: $accordion-panel-primary-padding;
+}
+
+%accordion__panelheader--primary {
+    font-family: $accordion-panelheader-primary-font-family;
+    font-size: $accordion-panelheader-primary-font-size;
+    color: $accordion-panelheader-primary-color;
+    margin: $accordion-panelheader-primary-margin;
+}
+
+%accordion__panelpara--primary {
+    font-family: $accordion-panelpara-primary-font-family;
+    font-size: $accordion-panelpara-primary-font-size;
+    color: $accordion-panelpara-primary-color;
+}
+
+%accordion__button-icon--primary {
+    content: $accordion-button-icon-primary-content;
+    transform: $accordion-button-icon-primary-transform;
+    transition: $accordion-button-icon-primary-transition;
+    position: $accordion-button-icon-primary-position;
+    right: $accordion-button-icon-primary-right;
+    top: $accordion-button-icon-primary-top;
+    color: $accordion-button-icon-primary-color;
+    font-size: $accordion-button-icon-primary-font-size;
+}
+
+%accordion__title--primary {
+    display: $accordion-title-primary-display;
+    width:  $accordion-title-primary-width;
+}
+
+%accordion__button--primary {
+    color: $accordion-button-primary-color;
+    font-family: $accordion-button-primary-font-family;
+    font-size: $accordion-button-primary-font-size;
+    font-weight: $accordion-button-primary-font-weight;
+    text-transform: $accordion-button-primary-text-transform;
+    text-align: $accordion-button-primary-text-align;
+    background: $accordion-button-primary-background;
+    border: $accordion-button-primary-border;
+    position: $accordion-button-primary-position;
+}
+
+%accordion__item--secondary {
+    max-width:  $accordion-item-secondary-width;
+    margin: $accordion-item-secondary-margin;
+    border-bottom: $accordion-secondary-bottom-border;
+}
+
+%accordion__header--secondary {
+    margin: $accordion-header-secondary-margin;
+    padding-top: $accordion-header-secondary-padding-top;
+    padding-bottom: $accordion-header-secondary-padding-bottom;
+}
+
+%accordion__panel--secondary {
+    font-family: $accordion-panel-secondary-font-family;
+    font-size: $accordion-panel-secondary-font-size;
+    color: $accordion-panel-secondary-color;
+    margin-top: $accordion-panel-secondary-margin-top;
+}
+
+%accordion__panelheader--secondary {
+    font-family: $accordion-panelheader-secondary-font-family;
+    font-size: $accordion-panelheader-secondary-font-size;
+    color: $accordion-panelheader-secondary-color;
+    margin: $accordion-panelheader-secondary-margin;
+}
+
+%accordion__panelpara--secondary {
+    font-family: $accordion-panelpara-secondary-font-family;
+    font-size: $accordion-panelpara-secondary-font-size;
+    color: $accordion-panelpara-secondary-color;
+}
+
+%accordion__button--secondary {
+    color: $accordion-button-secondary-color;
+    font-family: $accordion-button-secondary-font-family;
+    font-size: $accordion-button-secondary-font-size;
+    font-weight: $accordion-button-secondary-font-weight;
+    text-transform: $accordion-button-secondary-text-transform;
+    text-align: $accordion-button-secondary-text-align;
+    background: $accordion-button-secondary-background;
+    border: $accordion-button-secondary-border;
+    position: $accordion-button-secondary-position;
+}
+
+%accordion__button-icon--secondary {
+    content: $accordion-button-icon-secondary-content;
+    transform: $accordion-button-icon-secondary-transform;
+    transition: $accordion-button-icon-secondary-transition;
+    position: $accordion-button-icon-secondary-position;
+    right: $accordion-button-icon-secondary-right;
+    bottom: $accordion-button-icon-secondary-bottom;
+    color: $accordion-button-icon-secondary-color;
+    font-size: $accordion-button-icon-secondary-font-size;
+}
+

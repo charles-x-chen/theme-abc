@@ -1,0 +1,14 @@
+// z-index:
+// - We should never use a number for z-index like 9999
+// - The z-index of items on a page is specified by the stacking order below
+//
+// $z-index-stacking-order need to be declare
+// use 'default' when you need any z-index greater than zero
+// $z-index-stacking-order:
+// default,
+// overlay,
+// header
+// ;
+@mixin z-index($use-case, $indexes: $z-indexes) {
+	z-index: index($indexes, $use-case);
+}

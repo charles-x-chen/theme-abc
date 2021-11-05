@@ -1,0 +1,65 @@
+%button--primary {
+	color: $button-primary-color;
+	border: $button-primary-border;
+	background: $button-primary-background;
+	font-size: $button-primary-font-size;
+	font-family: $button-primary-font-family;
+	line-height: $button-primary-line-height;
+	text-transform: $button-primary-text-transform;
+	text-decoration: $button-primary-text-decoration;
+	letter-spacing: $button-primary-letter-spacing;
+	padding: $button-primary-padding;
+	display: $button-primary-display;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $button-primary-color-hover;
+		background: $button-primary-background-hover;
+		transition: $button-primary-transition-hover;
+	}
+}
+
+%button--secondary {
+	color: $button-secondary-color;
+	border: $button-secondary-border;
+	background: $button-secondary-background;
+	font-size: $button-secondary-font-size;
+	font-family: $button-secondary-font-family;
+	line-height: $button-secondary-line-height;
+	text-transform: $button-secondary-text-transform;
+	text-decoration: $button-secondary-text-decoration;
+	letter-spacing: $button-secondary-letter-spacing;
+	padding: $button-secondary-padding;
+	display: $button-secondary-display;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $button-secondary-color-hover;
+		background: $button-secondary-background-hover;
+		transition: $button-secondary-transition-hover;
+	}
+}
+
+%button--tertiary {
+	color: $button-tertiary-color;
+	border: $button-tertiary-border;
+	background: $button-tertiary-background;
+	font-size: $button-tertiary-font-size;
+	font-family: $button-tertiary-font-family;
+	line-height: $button-tertiary-line-height;
+	text-transform: $button-tertiary-text-transform;
+	text-decoration: $button-tertiary-text-decoration;
+	letter-spacing: $button-tertiary-letter-spacing;
+	padding: $button-tertiary-padding;
+	display: $button-tertiary-display;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $button-tertiary-color-hover;
+		background: $button-tertiary-background-hover;
+		transition: $button-tertiary-transition-hover;
+	}
+}

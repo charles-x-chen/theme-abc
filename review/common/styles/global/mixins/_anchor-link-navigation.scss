@@ -1,0 +1,23 @@
+%anchorlink__container--primary {
+    position: $anchorlink-container-position;
+    position: $anchorlink-container-webkit-position;
+    width: $anchorlink-container-width;
+    height: $anchorlink-container-height;
+    text-align: $anchorlink-container-text-align;
+    padding: $anchorlink-container-padding;
+    margin: $anchorlink-container-margin;
+    background: $anchorlink-container-background;
+    box-shadow: $anchorlink-container-box-shadow;
+}
+
+%anchorlink__button--primary {
+    text-transform: $anchorlink-button-text-transform;
+    text-decoration: $anchorlink-button-text-decoration;
+    font-family: $anchorlink-button-font-family;
+    font-size: $anchorlink-button-font-size;
+    font-weight: $anchorlink-button-font-weight;
+    color: $anchorlink-button-color;
+    background: $anchorlink-button-background;
+    border: $anchorlink-button-border;
+    padding: $anchorlink-button-padding;
+}

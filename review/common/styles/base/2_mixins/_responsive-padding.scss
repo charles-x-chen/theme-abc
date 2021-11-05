@@ -1,0 +1,58 @@
+@mixin responsive-padding($rp-map: 0, $coeff: 1) {
+	@each $rp-breakpoint, $rp-padding in $rp-map {
+
+		// write a single rule, applicable to all mixinPaddingBreakPoints
+		@if $rp-breakpoint == null {
+			@include make-padding($rp-padding);
+		}
+
+		// write a rules for each breakpoint
+		@else {
+			@media screen and (min-width: $rp-breakpoint) {
+				@include make-padding($rp-padding);
+			}
+		}
+	}
+}
+
+
+@mixin make-padding($rp-padding) {
+	// 1 paddings
+	@if length($rp-padding) == 1 and nth($rp-padding, 1) != null {
+		padding: nth($rp-padding, 1);
+	}
+
+	// 2 paddings
+	@else if length($rp-padding) == 2 {
+		@if nth($rp-padding, 1) != null {
+			padding-bottom: nth($rp-padding, 1);
+			padding-top: nth($rp-padding, 1);
+		}
+		@if nth($rp-padding, 2) != null {
+			padding-left: nth($rp-padding, 2);
+			padding-right: nth($rp-padding, 2);
+		}
+	}
+
+	// TODO
+	// // 3 paddings
+	// @else if length($rp-padding) == 3 {
+	// 	padding: nth($rp-padding, 1) nth($rp-padding, 2) nth($rp-padding, 3);
+	// }
+
+	// 4 paddings
+	@else if length($rp-padding) == 4 {
+		@if nth($rp-padding, 1) != null {
+			padding-top: nth($rp-padding, 1);
+		}
+		@if nth($rp-padding, 2) != null {
+			padding-right: nth($rp-padding, 2);
+		}
+		@if nth($rp-padding, 3) != null {
+			padding-bottom: nth($rp-padding, 3);
+		}
+		@if nth($rp-padding, 4) != null {
+			padding-left: nth($rp-padding, 4);
+		}
+	}
+}

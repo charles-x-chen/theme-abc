@@ -1,0 +1,18 @@
+.alert {
+	border-radius: 0.4rem;
+	color: $u-white;
+	font-size: 1.4rem;
+	padding: 1rem;
+}
+
+.error {
+	background-color: $u-rag-warning;
+}
+
+.warning {
+	background-color: $u-rag-neutral;
+}
+
+.success {
+	background-color: $u-rag-positive;
+}

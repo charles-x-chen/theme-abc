@@ -1,0 +1,32 @@
+%modal {
+    display: $modal-display;
+    height: $modal-height;
+    width: $modal-width;
+    position: $modal-position;
+    top: $modal-top;
+    left: $modal-left;
+    bottom: $modal-bottom;
+    background: $modal-background;
+}
+
+%modal-content {
+    position: $modal-content-position;
+    top: $modal-content-top;
+    left: $modal-content-left;
+    transform: $modal-content-transform;
+    background-color: $modal-content-background-color;
+}
+
+%modal-modal-header {
+    position: relative;
+    .close {
+        border: $modal-display;
+        background-color: $modal-content-background-color;
+        font-size: $modal-modal-header-font-size;
+        padding: $modal-top;
+        font-family: $modal-modal-header-font-family;
+        position: $modal-content-position;
+        top: $modal-top;
+        right: $modal-top;
+    }
+}

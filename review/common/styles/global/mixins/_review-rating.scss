@@ -1,0 +1,794 @@
+%cmp-review-rating-widget-container{
+    font-family: $review-rating-primary-font-family;
+}
+
+%cmp-review-rating-kr-percent{	
+	display: $review-rating-kr-percent-display;
+}	
+
+%cmp-review-rating-kr-panel{	
+	padding: $review-rating-kr-panel-padding;
+}
+
+%cmp-review-rating-kr-readpanel-header {
+	background: $review-rating-kr-readpanel-header-background;
+	display: $review-rating-kr-readpanel-header-display;
+	align-items: $review-rating-kr-readpanel-header-align-items;
+	justify-content: $review-rating-kr-no-rating-summary-justify-content;
+	margin-bottom: $review-rating-kr-readpanel-header-margin-bottom;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+}
+
+%cmp-review-rating-kr-readpanel-header-title {   
+	font-weight: $review-rating-kr-readpanel-header-title-font-weight;
+	font-size: $review-rating-kr-readpanel-header-title-font-size;
+	margin-bottom: $review-rating-kr-readpanel-header-title-margin-bottom;
+	text-align: $review-rating-kr-readpanel-header-title-text-align;
+	width: $review-rating-kr-readpanel-header-title-width;
+	line-height: $review-rating-kr-readpanel-header-title-line-height;
+	@include media-tablet{
+		text-align: $review-rating-kr-right-review-area-text-align;
+		font-size: $review-rating-kr-readpanel-header-tablet-title-font-size;
+		font-weight: $review-rating-kr-readpanel-tablet-header-title-font-weight;
+		margin: 30px 0;
+	}
+}
+
+%cmp-review-rating-kr-averageRingBlock2 {
+	display: $review-rating-kr-readpanel-header-display;	 
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+	flex-wrap: $review-rating-kr-averageRingBlock2-flex-wrap;
+	max-width: $review-rating-kr-averageRingBlock2-max-width;
+	width: $review-rating-kr-readpanel-header-title-width;
+	margin-bottom: $review-rating-kr-averageRingBlock2-margin-bottom;
+	margin-top: $review-rating-kr-averageRingBlock2-margin-top;
+	justify-content: $review-rating-kr-feedback-container-justify-content;
+	align-items: $review-rating-kr-readpanel-header-align-items;
+	@include media-tablet{
+		justify-content: $review-rating-kr-averageRingBlock2-justify-content;
+	}
+}
+
+%cmp-review-rating-kr-average-rating {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+	margin-top: $review-rating-kr-averageRingBlock2-margin-top;
+	order: $review-rating-kr-average-rating-order;
+	text-align: $review-rating-kr-readpanel-header-title-text-align;
+	@include media-tablet{
+		flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+		margin-top: $review-rating-kr-average-rating-margin-top;
+	}
+}
+
+%cmp-review-rating-kr-aggRtng {
+	font-size: $review-rating-kr-aggRtng-font-size;            
+	font-weight: $review-rating-kr-readpanel-tablet-header-title-font-weight;
+	line-height: $review-rating-kr-aggRtng-line-height;
+	text-align: $review-rating-kr-right-review-area-text-align;
+	@include media-tablet{
+		font-size: 5.1rem;
+	}	
+}
+
+%cmp-review-rating-aggRtng-kr-Stars{
+	&::before{
+		content: $review-rating-aggRtng-kr-star-content;
+		letter-spacing: $review-rating-aggRtng-kr-stars-letter-spacing;
+		background: $review-rating-aggRtng-kr-stars-background;
+		background-clip: $review-rating-aggRtng-kr-stars-background-clip;
+		-webkit-text-fill-color: $review-rating-aggRtng-kr-stars-fill-color;
+		-webkit-text-stroke: $review-rating-aggRtng-kr-stars-storke;
+	} 
+}
+
+%cmp-review-rating-kr-right-section {
+	margin-top: $review-rating-kr-averageRingBlock2-margin-top;
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;         
+	margin-left: $review-rating-kr-right-section-margin-left;
+	align-items: $review-rating-kr-right-section-align-items;
+	position: $review-rating-kr-aggregateRating-position;
+	@include media-tablet{
+		align-items: $review-rating-kr-readpanel-header-align-items;
+	}
+}
+
+%cmp-review-rating-kr-aggregateRating {
+	position: $review-rating-kr-aggregateRating-position;
+	height: $review-rating-kr-aggregateRating-height;
+	font-size: $review-rating-kr-readpanel-header-title-font-size;
+	line-height: $review-rating-kr-aggregateRating-line-height;	
+	@include media-tablet{
+		height: $review-rating-kr-aggregateRating-tablet-height;
+		float: $review-rating-kr-hide-display;
+		margin-top: $review-rating-kr-aggregateRating-margin-top;
+	}
+}
+
+%cmp-review-rating-kr-Stars{
+	font-size: $review-rating-kr-readpanel-header-title-font-size;
+}
+
+%cmp-review-rating-kr-pdRating {
+	display: $review-rating-kr-percent-display;
+	cursor: $review-rating-kr-pdRating-cursor;
+	color: $review-rating-kr-pdRating-color;
+	font-size: $review-rating-kr-pagination-text-font-size;                
+	margin-top: $review-rating-kr-pdRating-margin-top;
+	@include media-tablet{
+		margin-top: $review-rating-kr-pdRating-margin-top;
+	}	
+}
+
+%cmp-review-rating-kr-rating-summary-block {
+	width: $review-rating-kr-rating-summary-block-width;
+	height: $review-rating-kr-rating-summary-block-height;
+	display: $review-rating-kr-percent-display;
+	clear: $review-rating-kr-rating-summary-block-clear;
+	padding: $review-rating-kr-rating-summary-block-padding;
+	font-size: $review-rating-verified-user-text-font-size;				
+	font-weight: $review-rating-kr-readpanel-tablet-header-title-font-weight;
+	text-align: $review-rating-kr-readpanel-header-title-text-align;
+	order: $review-rating-kr-rating-tablet-summary-block-order;
+	margin-top: $review-rating-kr-rating-summary-block-margin-top;
+	@include media-tablet{
+		order: $review-rating-kr-rating-summary-block-order;
+		margin-top: $review-rating-kr-rating-summary-block-margin-top;
+	}
+}
+
+%cmp-review-rating-kr-rating-summary-block-table{
+	text-align: $review-rating-kr-readpanel-header-title-text-align;	
+	border-spacing: $review-rating-kr-rating-summary-block-table-border-spacing;
+}
+
+%cmp-review-rating-kr-rating-count-title{
+	color: $review-rating-kr-rating-count-title-color;
+	margin-bottom: $review-rating-kr-rating-count-title-margin-bottom;
+}
+
+%cmp-review-rating-kr-ratingbar-col{
+	width: $review-rating-kr-readpanel-header-title-width;
+	padding: $review-rating-kr-ratingbar-col-padding;
+}
+
+%cmp-review-rating-kr-ratingbar-td{
+	padding: $review-rating-global-value-ratingbar-td-padding;
+	white-space: $review-rating-kr-ratingbar-td-white-space;
+	font-size: $review-rating-verified-user-text-font-size;
+	line-height: $review-rating-kr-ratingbar-line-height;
+}
+
+%cmp-review-rating-kr-star-icon-svg{
+	fill: $review-rating-kr-star-icon-svg-color;
+	width: $review-rating-global-value-star-icon-svg-width;
+	height: $review-rating-global-value-star-icon-svg-height;
+}
+
+%cmp-review-rating-kr-filter-cta {
+	cursor: $review-rating-kr-filter-cta-cursor;
+	width: $review-rating-kr-filter-cta-width;
+}
+
+%cmp-review-rating-kr-disable-cursor {
+	cursor: $review-rating-kr-pdRating-cursor;
+}
+
+%cmp-review-rating-kr-rating-bar {
+	display: $review-rating-primary-display;
+	width: $review-rating-kr-readpanel-header-title-width;
+	height: $review-rating-kr-aggregateRating-tablet-height;
+	border: $review-rating-kr-rating-bar-border;
+	background-color: $review-rating-kr-readpanel-header-background;
+	overflow: $review-rating-kr-rating-bar-overflow;
+}
+
+%cmp-review-rating-kr-rating-bar-filled {
+	background-color: $review-rating-kr-star-icon-svg-color;
+	display: $review-rating-kr-percent-display;
+	vertical-align: $review-rating-kr-rating-bar-filled-vertical-align;
+	height: $review-rating-kr-aggregateRating-tablet-height;
+	overflow: $review-rating-kr-rating-bar-overflow;
+}
+
+%cmp-review-rating-kr-right-review-area {
+	text-align: $review-rating-kr-right-review-area-text-align;
+	position: $review-rating-kr-aggregateRating-position;	
+	order: $review-rating-kr-rating-summary-block-order;
+	margin-top: $review-rating-kr-averageRingBlock2-margin-top;
+	min-height: $review-rating-kr-right-review-area-min-height;
+	height: $review-rating-kr-right-review-area-height;
+	@include media-tablet{
+		margin-top: $review-rating-kr-right-review-area-margin-top;
+		order: $review-rating-kr-rating-tablet-summary-block-order;
+	}
+}
+
+%cmp-review-rating-write-review-btn {
+	background-color: $review-rating-write-review-btn-color;
+	box-sizing: border-box;
+	width: $review-rating-kr-rating-summary-block-height;                
+	border: $review-rating-write-review-btn-border;
+	border-radius: $review-rating-write-review-btn-border-radius;
+	padding: $review-rating-write-review-btn-padding;
+	font-size: $review-rating-verified-user-text-font-size;
+	cursor: $review-rating-kr-filter-cta-cursor;
+	display: $review-rating-kr-percent-display;
+	&:hover{
+		background-color: $review-rating-kr-star-icon-svg-color;
+		color: $review-rating-write-review-btn-color;
+	}
+}
+
+%cmp-review-rating-kr-no-rating-summary {
+	justify-content: $review-rating-kr-no-rating-summary-justify-content;
+	margin-top: $review-rating-kr-aggregateRating-margin-top;
+	@include media-tablet{
+		margin-top: $review-rating-kr-aggregateRating-margin-top;
+	}
+}
+
+%cmp-review-rating-kr-review-header-noreviews-title{
+	margin-bottom: $review-rating-kr-rating-summary-block-margin-top;
+}
+
+%cmp-review-rating-kr-readpanel-reviews{
+	padding-top: $review-rating-kr-readpanel-reviews-padding;
+}
+
+%cmp-review-rating-kr-review-count-header {
+	font-size: $review-rating-kr-review-count-header-font-size;
+	font-weight: $review-rating-kr-readpanel-tablet-header-title-font-weight;
+	letter-spacing: $review-rating-kr-comments-letter-spacing;
+	margin-top: $review-rating-kr-rating-summary-block-margin-top;
+	display: $review-rating-kr-readpanel-header-display;
+	align-items: $review-rating-kr-readpanel-header-align-items;
+	span{
+		margin-right: $review-rating-kr-right-section-margin-left;
+		line-height: $review-rating-kr-rating-summary-block-margin-top;
+	}
+	p{
+		margin-bottom: $review-rating-kr-rating-summary-block-margin-top;
+		margin-top: $review-rating-kr-rating-summary-block-margin-top;
+		font-family: $review-rating-primary-font-family;
+	}
+}
+
+%cmp-review-rating-kr-sort-container {
+	font-size: $review-rating-kr-sort-container-font-size;
+	margin-bottom: $review-rating-kr-sort-container-margin-bottom;
+	display: $review-rating-kr-readpanel-header-display;
+	select{
+		@include media-tablet{
+			font-size: $review-rating-kr-sort-container-tablet-font-size;
+		}
+	}
+}
+
+%cmp-review-rating-kr-filter-container {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+}
+
+%cmp-review-rating-kr-sort-by {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+	font-size: $review-rating-kr-sort-container-font-size;
+	label{
+		margin-top: $review-rating-kr-rating-summary-block-margin-top;
+		font-weight: $review-rating-primary-font-weight;
+	}
+}
+
+%cmp-review-rating-kr-sort-by-select {
+	padding: $review-rating-kr-sort-by-select-padding;
+	margin-right: $review-rating-kr-sort-by-select-margin-right;
+	margin-left: $review-rating-kr-rating-summary-block-margin-top;
+	margin-bottom: $review-rating-kr-rating-summary-block-margin-top;
+	width: $review-rating-kr-rating-summary-block-height;
+	border: $review-rating-kr-rating-bar-border;
+	max-width: $review-rating-kr-sort-by-select-max-width;
+	font-size: $review-rating-verified-user-text-font-size;
+	font-family: $review-rating-primary-font-family;
+	min-height: $review-rating-kr-reportBtn-anchor-min-width;
+	&:focus-visible{
+		outline: none;
+	}
+}
+
+%cmp-review-rating-kr-reviews-container{
+	&::before{
+		width: $review-rating-kr-readpanel-header-title-width;
+	}
+}
+
+%cmp-review-rating-kr-custom-block{
+	border-top: $review-rating-kr-rating-bar-border;
+}
+
+%cmp-review-rating-kr-rating-container {
+	padding-bottom: $review-rating-kr-rating-container-padding;
+}
+
+%cmp-review-rating-kr-review-aggregateRating {
+	position: $review-rating-kr-aggregateRating-position;
+	display: $review-rating-kr-percent-display;
+	float: $review-rating-kr-hide-display;
+	font-size: $review-rating-kr-readpanel-header-title-font-size;
+	--percent: calc(var(--rating) / 5 * 100%);                        
+	&::before{
+		content: $review-rating-aggRtng-kr-star-content;
+		letter-spacing: $review-rating-kr-comments-letter-spacing;
+		background: linear-gradient(90deg, #c79652 var(--percent), #ccc var(--percent));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1px #c79652;
+	} 
+}
+
+%cmp-review-rating-kr-review-title {
+	font-size: $review-rating-kr-review-title-font-size;
+	font-weight: $review-rating-kr-readpanel-header-title-font-weight;
+	margin-top: $review-rating-kr-rating-summary-block-margin-top;
+	margin-bottom: $review-rating-kr-review-title-margin-bottom;
+	@include media-tablet{
+		font-weight: $review-rating-kr-readpanel-tablet-header-title-font-weight;
+	}
+}
+
+%cmp-review-rating-screenreader {
+	position: $review-rating-screenreader-position;
+	left: $review-rating-kr-rating-summary-block-margin-top;
+	opacity: $review-rating-screenreader-opacity;
+}
+
+%cmp-review-rating-kr-comments {
+	font-size: $review-rating-verified-user-text-font-size;
+	letter-spacing: $review-rating-kr-comments-letter-spacing;
+	margin-bottom: $review-rating-kr-review-title-margin-bottom;
+}
+
+%cmp-review-rating-kr-morelink {
+	color: $review-rating-kr-star-icon-svg-color;
+	cursor: $review-rating-kr-filter-cta-cursor;
+	font-weight: $review-rating-primary-font-weight;
+	text-decoration: $review-rating-kr-morelink-text-decoration;
+	&:hover{
+		text-decoration: $review-rating-kr-hide-display;
+	}
+}
+
+%cmp-review-rating-review-media{
+	margin-bottom: $review-rating-review-media-margin-bottom;
+}
+
+%cmp-review-rating-verified-user-icon {
+	width: $review-rating-kr-pagination-text-font-size;
+	height: $review-rating-kr-pagination-text-font-size;
+	display: $review-rating-kr-percent-display;
+	svg{
+		fill: $review-rating-kr-star-icon-svg-color;
+	}
+}
+
+%cmp-review-rating-verified-user-text {
+	font-size: $review-rating-verified-user-text-font-size;	
+}
+
+%cmp-review-rating-reviewer-name {
+	font-size: $review-rating-verified-user-text-font-size;
+	font-weight: $review-rating-primary-font-weight;
+	line-height: $review-rating-kr-review-title-font-size;
+}
+
+%cmp-review-rating-responseDate {
+	margin-bottom: $review-rating-kr-review-title-margin-bottom;
+}
+
+%cmp-review-rating-kr-responder-name {
+	color: $review-rating-kr-star-icon-svg-color;
+	font-size: $review-rating-kr-responder-name-font-size;
+	font-weight: $review-rating-primary-font-weight;
+}
+
+%cmp-review-rating-kr-feedback-container {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+	justify-content: $review-rating-kr-feedback-container-justify-content;
+	color: $review-rating-kr-pdRating-color;
+}
+
+%cmp-review-rating-kr-hide{
+	display: $review-rating-kr-hide-display;
+}
+
+%cmp-review-rating-kr-thanksMessage{
+	span{
+		font-size: $review-rating-kr-pagination-text-font-size;
+	}
+}
+
+
+%cmp-review-rating-kr-helpfulBtn {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+	min-width: $review-rating-kr-reportBtn-anchor-min-width;
+	height: $review-rating-kr-helpfulBtn-height;
+	text-align: $review-rating-kr-right-review-area-text-align;
+}
+
+%cmp-review-rating-kr-helpful-v2{
+	cursor: $review-rating-kr-filter-cta-cursor;
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+	text-decoration: $review-rating-kr-hide-display;
+	background: $review-rating-aggRtng-kr-stars-background;
+	border: $review-rating-kr-hide-display;
+	background-attachment: scroll;
+	background-color: $review-rating-aggRtng-kr-stars-background;
+	background-image: $review-rating-kr-hide-display;
+	background-position: 0 0;
+	background-repeat: repeat;
+	border-color: currentColor;
+	border-radius: $review-rating-kr-rating-summary-block-padding;
+	border-style: $review-rating-kr-hide-display;
+	border-width: medium;
+	bottom: $review-rating-kr-rating-summary-block-height;
+	box-sizing: content-box;
+	clear: $review-rating-kr-hide-display;
+	clip: $review-rating-kr-rating-summary-block-height;
+	color: $review-rating-kr-helpful-direction;
+	counter-increment: $review-rating-kr-hide-display;
+	counter-reset: $review-rating-kr-hide-display;
+	direction: $review-rating-kr-helpful-direction;
+	font-family: $review-rating-kr-helpful-direction;
+	font-size: $review-rating-kr-helpful-direction;
+	font-style: $review-rating-kr-helpful-direction;
+	font-variant: $review-rating-kr-helpful-font-variant;
+	font-weight: $review-rating-kr-helpful-direction;
+	left: $review-rating-kr-rating-summary-block-height;
+	letter-spacing: $review-rating-kr-helpful-font-variant;
+	line-height: $review-rating-kr-helpful-direction;
+	list-style-type: $review-rating-kr-helpful-direction;
+	list-style-position: outside;
+	list-style-image: $review-rating-kr-hide-display;
+	margin: $review-rating-kr-rating-summary-block-padding;
+	max-height: $review-rating-kr-hide-display;
+	max-width: $review-rating-kr-hide-display;
+	min-height: $review-rating-kr-rating-summary-block-padding;
+	min-width: $review-rating-kr-rating-summary-block-padding;
+	opacity: 1;
+	outline: invert $review-rating-kr-hide-display medium;
+	overflow: visible;
+	padding: $review-rating-kr-rating-summary-block-padding;
+	position: static;
+	quotes: '' '';
+	right: $review-rating-kr-rating-summary-block-height;
+	table-layout: $review-rating-kr-rating-summary-block-height;
+	text-indent: $review-rating-kr-rating-summary-block-padding;
+	text-transform: $review-rating-kr-hide-display;
+	top: $review-rating-kr-rating-summary-block-height;
+	unicode-bidi: $review-rating-kr-helpful-font-variant;
+	vertical-align: baseline;
+	visibility: $review-rating-kr-helpful-direction;
+	white-space: $review-rating-kr-helpful-font-variant;
+	width: $review-rating-kr-rating-summary-block-height;
+	word-spacing: $review-rating-kr-helpful-font-variant;
+	z-index: $review-rating-kr-rating-summary-block-height;
+	filter: $review-rating-kr-hide-display;
+	-moz-border-radius: $review-rating-kr-rating-summary-block-padding;
+	-webkit-border-radius: $review-rating-kr-rating-summary-block-padding;
+	&:hover {
+		color: $review-rating-kr-star-icon-svg-color;
+	}
+}
+
+%cmp-review-rating-kr-helpful{
+	display: $review-rating-kr-readpanel-header-display;
+	.kr-helpful-icon {
+		svg{
+			fill: $review-rating-kr-star-icon-svg-color;
+			stroke: $review-rating-kr-star-icon-svg-color;
+		}
+		.kr-helpful-count{
+			color: $review-rating-kr-star-icon-svg-color;
+		}
+	}
+	.kr-helpful-text {
+		color: $review-rating-kr-star-icon-svg-color;
+	}
+}
+
+%cmp-review-rating-kr-helpful-icon {
+	margin-right: $review-rating-kr-right-section-margin-left;
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+}
+
+%cmp-review-rating-kr-helpful-icon-svg {
+	color: $review-rating-kr-pdRating-color;
+	width: $review-rating-kr-aggregateRating-height;
+	height: $review-rating-kr-aggregateRating-height;
+	margin-bottom: $review-rating-kr-right-section-margin-left;
+}
+
+%cmp-review-rating-kr-helpful-count {
+	font-size: $review-rating-kr-sort-container-font-size;
+	color: $review-rating-kr-pdRating-color;
+	margin-left: $review-rating-kr-right-section-margin-left;
+}
+%cmp-review-rating-kr-helpful-text {
+	font-size: $review-rating-kr-sort-container-font-size;
+	text-align: $review-rating-kr-readpanel-header-title-text-align;
+	color: $review-rating-kr-pdRating-color;
+}
+
+%cmp-review-rating-kr-socialBtn {
+	display: $review-rating-kr-percent-display;
+	width: $review-rating-kr-socialBtn-width;
+	height: $review-rating-kr-helpfulBtn-height;
+	text-align: $review-rating-kr-right-review-area-text-align;	
+}
+
+%cmp-review-rating-kr-socialBtn-button{
+	background: $review-rating-aggRtng-kr-stars-background;
+	border: $review-rating-kr-hide-display;
+	max-width: $review-rating-kr-socialBtn-width;
+	max-height: $review-rating-kr-helpfulBtn-height;
+}
+
+%cmp-review-rating-kr-share-icon{
+	fill: $review-rating-kr-pdRating-color;
+	width: $review-rating-kr-aggregateRating-height;
+	height: $review-rating-kr-aggregateRating-height;
+	stroke: $review-rating-kr-pdRating-color;
+	margin-left: $review-rating-kr-share-icon-margin-left;
+	&:hover{
+		svg{
+			fill: $review-rating-kr-star-icon-svg-color;
+			stroke: $review-rating-kr-star-icon-svg-color;
+		}
+		.kr-share-text{
+			color: $review-rating-kr-star-icon-svg-color;
+		}
+	}
+}
+
+%cmp-review-rating-kr-share-text {
+	font-size: $review-rating-kr-sort-container-font-size;
+	color: $review-rating-kr-pdRating-color;	
+	white-space: $review-rating-kr-ratingbar-td-white-space;
+}
+
+%cmp-review-rating-kr-share{
+	display: $review-rating-kr-hide-display;
+}
+
+%cmp-review-rating-kr-reportBtn {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+	text-decoration: $review-rating-kr-hide-display;
+	background: $review-rating-aggRtng-kr-stars-background;
+	border: $review-rating-kr-hide-display;
+	width: $review-rating-kr-socialBtn-width;
+	height: $review-rating-kr-helpfulBtn-height;
+	text-align: $review-rating-kr-right-review-area-text-align;
+	margin-left: $review-rating-kr-rating-summary-block-height;
+}
+
+%cmp-review-rating-kr-reportBtn-anchor{
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-readpanel-header-flex-direction;
+	align-items: $review-rating-kr-right-review-area-text-align;
+	background: $review-rating-aggRtng-kr-stars-background;
+	border: $review-rating-kr-hide-display;
+	width: fit-content;
+	min-width: $review-rating-kr-right-review-area-margin-top;
+	height: $review-rating-kr-reportBtn-anchor-min-width;
+	text-decoration: $review-rating-kr-hide-display;
+	background-attachment: scroll;
+	background-color: $review-rating-aggRtng-kr-stars-background;;
+	background-image: $review-rating-kr-hide-display;
+	background-position: 0 0;
+	background-repeat: repeat;
+	border-color: currentColor;
+	border-radius: 0;
+	border-style: $review-rating-kr-hide-display;
+	border-width: medium;
+	bottom: $review-rating-kr-rating-summary-block-height;
+	box-sizing: content-box;
+	clear: $review-rating-kr-hide-display;
+	clip: $review-rating-kr-rating-summary-block-height;
+	color: $review-rating-kr-helpful-direction;
+	counter-increment: $review-rating-kr-hide-display;
+	counter-reset: $review-rating-kr-hide-display;
+	direction: $review-rating-kr-helpful-direction;
+	font-family: $review-rating-kr-helpful-direction;
+	font-size: $review-rating-kr-helpful-direction;
+	font-style: $review-rating-kr-helpful-direction;
+	font-variant: $review-rating-kr-helpful-font-variant;
+	font-weight: $review-rating-kr-helpful-direction;
+	left: $review-rating-kr-rating-summary-block-height;
+	letter-spacing: $review-rating-kr-helpful-font-variant;
+	line-height: $review-rating-kr-helpful-direction;
+	list-style-type: $review-rating-kr-helpful-direction;
+	list-style-position: outside;
+	list-style-image: $review-rating-kr-hide-display;
+	margin: $review-rating-kr-rating-summary-block-margin-top;
+	max-height: $review-rating-kr-hide-display;
+	max-width: $review-rating-kr-hide-display;
+	min-height: $review-rating-kr-rating-summary-block-margin-top;
+	min-width: $review-rating-kr-rating-summary-block-margin-top;
+	opacity: 1;
+	outline: invert $review-rating-kr-hide-display medium;
+	overflow: visible;
+	padding: $review-rating-kr-rating-summary-block-margin-top;
+	position: static;
+	quotes: '' '';
+	right: $review-rating-kr-rating-summary-block-height;
+	table-layout: $review-rating-kr-rating-summary-block-height;
+	text-indent: $review-rating-kr-rating-summary-block-margin-top;
+	text-transform: $review-rating-kr-hide-display;
+	top: $review-rating-kr-rating-summary-block-height;
+	unicode-bidi: $review-rating-kr-helpful-font-variant;
+	vertical-align: baseline;
+	visibility: $review-rating-kr-helpful-direction;
+	white-space: $review-rating-kr-helpful-font-variant;
+	width: $review-rating-kr-rating-summary-block-height;
+	word-spacing: $review-rating-kr-helpful-font-variant;
+	z-index: $review-rating-kr-rating-summary-block-height;
+	filter: $review-rating-kr-hide-display;
+	-moz-border-radius: $review-rating-kr-rating-summary-block-margin-top;
+	-webkit-border-radius: $review-rating-kr-rating-summary-block-margin-top;
+}
+
+%cmp-review-rating-kr-reportBtn-svg-hover{
+	fill: $review-rating-kr-star-icon-svg-color;
+	stroke: $review-rating-kr-star-icon-svg-color;
+}
+
+%cmp-review-rating-kr-reportBtn-kr-share-text-hover{
+	color: $review-rating-kr-star-icon-svg-color;
+}
+
+%cmp-review-rating-kr-share-tooltip-button{
+	background: $review-rating-aggRtng-kr-stars-background;
+	border: $review-rating-kr-hide-display;	
+}
+
+%cmp-review-rating-kr-share-tooltip-button-svg{
+	fill: $review-rating-kr-pdRating-color;
+	stroke: $review-rating-kr-pdRating-color;
+}
+
+%cmp-review-rating-kr-share-tooltip-button-kr-share-text{
+	color: $review-rating-kr-pdRating-color
+}
+
+%cmp-review-rating-kr-share-tooltip{
+	display: $review-rating-kr-hide-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+	justify-content: $review-rating-kr-share-tooltip-direction;
+	text-align: $review-rating-kr-right-review-area-text-align;
+	padding: $review-rating-kr-share-tooltip-padding;
+	position: $review-rating-kr-aggregateRating-position;
+	z-index: $review-rating-kr-average-rating-order;	
+	left: $review-rating-kr-readpanel-header-title-width;
+	min-width: $review-rating-kr-share-tooltip-min-width;
+	box-shadow: $review-rating-kr-share-tooltip-box-shadow;
+	white-space: $review-rating-kr-ratingbar-td-white-space;
+	&::before {
+		content: $review-rating-kr-share-tooltip-content;
+		position: $review-rating-screenreader-position;
+		top: $review-rating-kr-share-tooltip-top;
+		right: $review-rating-kr-readpanel-header-title-width;
+		transform: $review-rating-kr-share-tooltip-transform;
+		border-top: $review-rating-kr-share-tooltip-border;
+		border-right: $review-rating-kr-share-tooltip-before-border;
+		border-bottom: $review-rating-kr-share-tooltip-border;
+	}
+	&::after{
+		content: $review-rating-kr-share-tooltip-content;
+		position: $review-rating-kr-aggregateRating-position;
+		top: $review-rating-kr-share-tooltip-top;
+		right: $review-rating-kr-readpanel-header-title-width;
+	}
+}
+
+%cmp-review-rating-kr-facebook-icon {  	
+	background-repeat: $review-rating-kr-facebook-icon-background;
+	background-size: $review-rating-kr-facebook-icon-background-size;
+	padding: $review-rating-kr-facebook-icon-padding;
+	svg {
+		width: $review-rating-kr-rating-summary-block-height;
+		height: $review-rating-kr-rating-summary-block-margin-top;
+		min-width: $review-rating-kr-rating-summary-block-margin-top;
+	}
+}
+
+%cmp-review-rating-kr-share-alignment-change{
+	left: $review-rating-kr-share-alignment-tablet-change-left;
+	&::before {
+		left: $review-rating-kr-share-alignment-change-left;
+		transform: $review-rating-kr-share-tooltip-tablet-transform;
+	}
+}
+
+%cmp-review-rating-kr-pagination-nav {
+	display: $review-rating-kr-readpanel-header-display;
+	flex-direction: $review-rating-kr-filter-container-flex-direction;
+	justify-content: $review-rating-kr-no-rating-summary-justify-content;
+	align-items: $review-rating-kr-readpanel-header-align-items;
+}
+
+%cmp-review-rating-kr-pagination-text {
+	float: $review-rating-kr-readpanel-header-title-text-align;
+	font-size: $review-rating-kr-pagination-text-font-size;
+	text-align: $review-rating-kr-right-review-area-text-align;
+	margin-right: $review-rating-kr-review-title-margin-bottom;
+	&:hover{
+		text-decoration: $review-rating-kr-hide-display;
+	}
+}
+
+%cmp-review-rating-kr-pagination-links {
+	font-size: $review-rating-verified-user-text-font-size;
+	display: $review-rating-kr-readpanel-header-display;
+	align-items: $review-rating-kr-readpanel-header-align-items;
+}
+
+%cmp-review-rating-kr-responseDate {
+	color: $review-rating-kr-pdRating-color;
+	font-size: $review-rating-kr-sort-container-font-size;
+	letter-spacing: $review-rating-kr-comments-letter-spacing;
+}
+
+%cmp-review-rating-cmp-integration--reviewrating{
+    text-align: $review-rating-kr-right-review-area-text-align;
+    margin-bottom: $review-rating-kr-readpanel-header-title-margin-bottom;
+}
+
+%cmp-review-rating-kr-star-widget{
+	font-size: $review-rating-kr-readpanel-header-title-font-size;
+} 
+
+%cmp-review-rating-kr-tReview{
+	font-size: $review-rating-kr-tReview-font-size;
+} 
+
+%cmp-review-rating-kr-box-wrapper {
+	font-size: $review-rating-kr-tReview-font-size;
+}
+
+%cmp-review-rating-kr-writeReview-heading {
+	font-size: $review-rating-kr-writeReview-heading-font-size;
+	margin: $review-rating-kr-rating-summary-block-margin-top;	
+	@include media-tablet{
+		font-size: $review-rating-kr-writeReview-tablet-heading-font-size
+	}
+}
+
+%cmp-review-rating-kr-heading-3 {
+	font-size: $review-rating-kr-tReview-font-size;	
+	@include media-tablet {
+		font-size: $review-rating-kr-readpanel-header-title-font-size;
+	}
+}
+
+%cmp-review-rating-kr-label{
+	font-size: $review-rating-verified-user-text-font-size;	
+	@include media-tablet{
+		font-size: $review-rating-kr-tReview-font-size;	
+	}
+}
+
+%cmp-review-rating-kr-label-text {
+	font-size: $review-rating-kr-pagination-text-font-size;
+	line-height: $review-rating-kr-review-title-font-size;
+}
+
+%cmp-review-rating-kr-mandatory {
+	font-size: $review-rating-kr-tReview-font-size;	
+}

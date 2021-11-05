@@ -1,0 +1,23 @@
+%headline-wrapper{
+    align-items: $headline-wrapper-align-items;
+    display: $headline-wrapper-display;
+    flex-direction: $headline-wrapper-flex-direction;
+    flex-wrap: $headline-wrapper-flex-wrap;
+    justify-content: $headline-wrapper-justify-content;
+    width: $headline-wrapper-width;
+}
+
+%headline-avatar {
+    flex: $headline-avatar-flex;
+    width: $headline-avatar-width;
+}
+
+%headline-title {
+    flex: $headline-title-flex;
+    padding-left: $headline-title-padding-left;
+}
+
+
+%headline-social-links-list {
+    flex: $headline-avatar-flex;
+}

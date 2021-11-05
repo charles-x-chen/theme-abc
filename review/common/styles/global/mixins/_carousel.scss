@@ -1,0 +1,45 @@
+%carousel-primary{
+.cmp-carousel__action{
+    background-color: transparent;
+    color: #c79652;
+    position: absolute;
+}
+.cmp-carousel__action--pause, .cmp-carousel__action--play, .cmp-carousel__action-text, .cmp-carousel__indicators{
+    display: none;
+}
+.cmp-carousel__action--previous{
+    top: 50%;
+    left: 25px;
+    .cmp-carousel__action-icon {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2243%22%20height%3D%2292%22%3E%3Cpath%20d%3D%22M41.174%2090L3%2046%2041.174%202%22%20stroke%3D%22%23C79652%22%20stroke-width%3D%224%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E) no-repeat center;
+        background-size: cover;
+        display: block;
+        width: 12px;
+        height: 20px;
+    }
+}
+.cmp-carousel__action--next{
+    top: 50%;
+    right: 25px;
+    .cmp-carousel__action-icon {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2243%22%20height%3D%2292%22%3E%3Cpath%20d%3D%22M2%202l38.174%2044L2%2090%22%20stroke%3D%22%23C79652%22%20stroke-width%3D%224%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E) no-repeat center;
+        background-size: cover;
+        display: block;
+        width: 12px;
+        height: 20px;
+    }
+}
+.image{
+    img{ width: 100%; }
+    .cmp-image--title{display: none;}
+}
+.cmp-carousel__item{
+    animation: anim .3s ease;
+}
+@keyframes anim {
+    0% {
+      display: none;
+      opacity: 0.4;
+    }
+}
+}

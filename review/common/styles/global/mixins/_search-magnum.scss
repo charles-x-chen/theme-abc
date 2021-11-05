@@ -1,0 +1,42 @@
+%search-bar {
+    position: $search-bar-position;
+    display: $search-bar-display;
+    width: $search-bar-width;
+    border: $search-bar-border;
+}
+
+%search-bar-input {
+    margin: $search-bar-input-margin;
+    padding: $search-bar-input-padding;
+    border: $search-bar-input-border;
+    padding: $search-bar-input-padding;
+    color: $search-bar-input-color;
+    font-size: $search-bar-input-font-size;
+    font-family: $search-bar-input-font-family;
+    outline: $search-bar-input-outline;
+    width: $search-bar-width;
+    text-align: $search-bar-input-text-align;
+    background-color: $search-bar-input-background-color;
+    box-shadow: $search-bar-input-box-shadow;
+    border-radius: $search-bar-input-border-radius;
+    height: $search-bar-input-height;
+}
+
+%search-bar-button {
+    position: $search-bar-button-position;
+    top: $search-bar-input-margin;
+    right: $search-bar-input-margin;
+    margin: $search-bar-input-margin;
+    font-size: $search-bar-input-font-size;
+    margin: $search-bar-input-margin;
+    padding: $search-bar-button-padding;
+    line-height: $search-bar-button-line-height;
+    text-transform: $search-bar-button-text-transform;
+    letter-spacing: $search-bar-button-letter-spacing;
+    color: $search-bar-input-color;
+    background-color: $search-bar-button-background-color;
+    border: $search-bar-input-border;
+    border-radius: $search-bar-input-margin;
+    height: $search-bar-width;
+    font-family: $search-bar-input-font-family;
+}

@@ -1,0 +1,53 @@
+.m-header {
+	align-items: flex-end;
+	background-color: $u-white;
+	display: flex;
+	justify-content: space-around;
+	padding: 2rem 0;
+
+	.wrapper {
+		width: 100%;
+	}
+
+	img {
+		width: 5rem;
+	}
+
+	svg {
+		height: 2rem;
+		width: 3.2rem;
+	}
+
+	.utilities {
+		align-items: center;
+		display: flex;
+
+		a {
+			align-items: center;
+			color: $u-black;
+			display: flex;
+		}
+	}
+
+	nav {
+		align-items: flex-start;
+
+		ul {
+			align-items: flex-end;
+			color: $u-black;
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				margin: 0;
+				padding: 0 1rem;
+
+				a {
+					color: $u-black;
+				}
+			}
+		}
+	}
+}

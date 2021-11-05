@@ -1,0 +1,50 @@
+%cmp-languagenavigation-accordion{
+            width:$cmp-languagenavigation-accordion-global-width-100pc;
+        max-width:$cmp-languagenavigation-accordion-max-width; 
+            padding: $cmp-languagenavigation-accordion-padding;
+}
+%cmp-languagenavigation-accordion-group{
+    list-style: $cmp-languagenavigation-accordion-global-display-none;
+    text-align: $cmp-languagenavigation-accordion-group-text-align;
+    padding: $cmp-languagenavigation-accordion-group-padding;
+}
+%cmp-languagenavigation-accordion-heading{
+    font-weight: $cmp-languagenavigation-accordion-heading-font-weight;
+    line-height: $cmp-languagenavigation-accordion-heading-line-height;
+    letter-spacing: $cmp-languagenavigation-accordion-heading-letter-spacing;
+    font-family: $cmp-languagenavigation-accordion-heading-font-family;
+    color: $cmp-languagenavigation-accordion-heading-color;
+    text-transform: $cmp-languagenavigation-accordion-heading-text-transform;		
+    font-size: $cmp-languagenavigation-accordion-heading-font-size-mobile;
+    padding: $cmp-languagenavigation-accordion-heading-padding;	
+    display: $cmp-languagenavigation-accordion-global-diplay-block;
+}	
+%cmp-languagenavigation-accordion-group-level{
+    padding:$cmp-languagenavigation-accordion-inner-group-padding;
+    display: $cmp-languagenavigation-accordion-global-display-none;
+}
+%cmp-languagenavigation-accordion-level-one{
+    width: $cmp-languagenavigation-accordion-global-width-100pc;
+    display: $cmp-languagenavigation-accordion-global-diplay-inline-block;
+    padding:$cmp-languagenavigation-accordion-level-one-padding;    
+}
+
+%cmp-languagenavigation-accordion-level-one-title{
+    text-decoration: $cmp-languagenavigation-accordion-global-display-none;
+    font-size: $cmp-languagenavigation-accordion-level-one-title-font-size;
+    line-height: $cmp-languagenavigation-accordion-level-one-title-line-height;
+    font-weight: $cmp-languagenavigation-accordion-level-one-title-font-weight;
+    letter-spacing: $cmp-languagenavigation-accordion-level-one-title-letter-spacing;
+    color: $cmp-languagenavigation-accordion-level-one-title-color;
+    cursor:$cmp-languagenavigation-accordion-level-one-title-cursor;
+    padding: $cmp-languagenavigation-accordion-inner-group-padding;    
+}
+%cmp-languagenavigation-accordion-level-one-group{
+    padding: $cmp-languagenavigation-accordion-inner-group-padding;
+    display:$cmp-languagenavigation-accordion-global-diplay-block;
+}
+%cmp-languagenavigation-accordion-level-two-title{
+    color: $cmp-languagenavigation-accordion-level-one-title-hover-color;
+    font-size: $cmp-languagenavigation-accordion-level-two-title-font-size;
+    text-decoration: $cmp-languagenavigation-accordion-global-display-none;
+}

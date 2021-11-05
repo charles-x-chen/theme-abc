@@ -1,0 +1,50 @@
+%text-accordion {
+	text-align: $text-accordion-text-align;
+
+    h1 {
+        text-transform: $text-accordion-text-transform;
+        color: $text-accordion-color;
+		margin-top: $text-accordion-margin;
+        margin-bottom: $text-accordion-margin;
+        padding: $text-accordion-padding;
+		font-size: $text-accordion-font-size;
+        font-family: $text-accordion-font-family;
+        font-weight: $text-accordion-font-weight;
+        line-height: $text-accordion-line-height;
+        letter-spacing: $text-accordion-letter-spacing;
+        text-decoration: $text-accordion-text-decoration;			
+	}    
+}
+
+%text-accordion-p {
+    font-family: $font-primary;
+    font-size: $text-accordion-p-font-size;
+    font-weight: $text-accordion-p-font-weight;
+    margin-bottom: $text-accordion-margin;
+    padding: $text-accordion-padding;		
+}
+
+%text-contact-header-title {
+	margin-top: $text-accordion-padding;
+    margin-bottom: $text-contact-header-title-margin-bottom;
+    padding-top: $text-contact-header-title-margin-bottom;
+    padding-bottom: $text-contact-header-title-margin-bottom;
+    font-size: $text-accordion-font-size;
+    line-height: $text-contact-header-title-line-height;    
+}
+
+%text-description-large {
+    font-size: $text-description-large-font-size;
+    font-weight: $text-accordion-p-font-weight;
+    margin-bottom: $text-accordion-margin;
+    text-align: $text-accordion-text-align;
+    padding: $text-accordion-padding;
+    color: $text-description-large-color;
+}
+
+%text-description-xlarge {
+    font-size: $text-accordion-margin;
+    font-weight: $text-description-xlarge-font-weight;
+    text-align: $text-accordion-text-align;
+    line-height: $text-description-xlarge-line-height;
+}

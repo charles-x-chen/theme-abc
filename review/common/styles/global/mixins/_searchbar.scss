@@ -1,0 +1,192 @@
+%searchbar__container{
+    background-color: $searchbar-container-background-color;
+    display: $searchbar-container-display;
+    position: $searchbar-container-position;
+    top: $searchbar-container-top;
+    right: $searchbar-container-right;
+    text-align: $searchbar-container-text-align;
+    @include media-tablet {
+        right: $searchbar-container-right-tablet;
+    }
+}
+
+%searchbar__cmp-button{
+    display: $searchbar-cmp-button-display;
+    align-items: $searchbar-cmp-button-align-items;
+    width: $searchbar-cmp-button-width;
+    height: $searchbar-cmp-button-height;
+    color: $searchbar-cmp-button-color;
+    font-size: $searchbar-cmp-button-font-size;
+    font-family: $searchbar-cmp-button-font-family;
+    font-weight: $searchbar-cmp-button-font-weight;
+    letter-spacing: $searchbar-cmp-button-letter-spacing;
+    text-indent: $searchbar-cmp-button-text-indent;
+    border: $searchbar-cmp-button-border;
+    background: $searchbar-cmp-button-background;
+    padding: $searchbar-cmp-button-padding;
+    overflow: $searchbar-cmp-button-overflow;
+    line-height: $searchbar-cmp-button-line-height;
+
+    img {
+        width: $searchbar-cmp-button-img-width;  
+        margin-right: $searchbar-cmp-button-img-margin-right;
+        height: $searchbar-cmp-button-img-height;
+    }
+
+    &:hover, &:active, &:focus{
+        background-color: $searchbar-cmp-button-hover-bg-color;
+        color: $searchbar-cmp-button-hover-color;           
+    }
+
+    &:focus{
+        outline: $searchbar-cmp-button-outline;
+        outline-offset: $searchbar-cmp-button-outline-offset;
+    }
+
+    @include media-tablet {
+        width: $searchbar-cmp-button-width-tablet;
+        height: $searchbar-cmp-button-height-tablet;
+        text-indent: $searchbar-cmp-button-text-indent-tablet;
+        position: $searchbar-cmp-button-position-tablet;
+        outline: $searchbar-cmp-button-outline-tablet;
+    }
+}
+
+%searchbar__result-wrapper {
+    position: $searchbar-result-wrapper-position;
+    top: $searchbar-result-wrapper-top;
+    left: $searchbar-result-wrapper-left;
+    width: $searchbar-result-wrapper-width;
+    display: $searchbar-result-wrapper-display;
+}
+
+%searchbar__result-container {
+    top: $searchbar-result-container-top;   
+    padding: $searchbar-result-container-padding;
+    max-width: $searchbar-result-container-max-width;
+    width: $searchbar-result-container-width;
+    overflow-y: $searchbar-result-container-overflow-y;
+    max-height: $searchbar-result-container-max-height;
+}
+
+%searchbar__items {
+    padding: $searchbar-items-padding;
+    font-size: $searchbar-items-font-size;
+    cursor: $searchbar-items-cursor;
+    font-family: $searchbar-items-font-family;
+    font-weight: $searchbar-items-font-weight;
+    &:hover{
+        background:$color-global-secondary;
+        color:$color-global-white;
+    }  
+}
+
+%searchbar__modal-wrapper {
+    display: $searchbar-modal-wrapper-display;
+    height: $searchbar-modal-wrapper-height;
+    width: $searchbar-modal-wrapper-width;
+    position: $searchbar-modal-wrapper-position;
+    top: $searchbar-modal-wrapper-top;
+    left: $searchbar-modal-wrapper-left;
+    bottom: $searchbar-modal-wrapper-bottom;    
+    background: $searchbar-modal-wrapper-background;
+    z-index: $searchbar-modal-wrapper-z-index;
+}
+
+%searchbar__modal-content {
+    position: $searchbar-modal-content-position;
+    top: $searchbar-modal-content-top;
+    left: $searchbar-modal-content-left;
+    transform: $searchbar-modal-content-transform;
+    background-color: $searchbar-modal-content-background-color;
+    min-width: $searchbar-modal-content-min-width;
+    
+    @include media-tablet{
+        min-width: $searchbar-modal-content-min-width-tablet;
+    }
+    @include media-desktop{
+        min-width: $searchbar-modal-content-min-width-desktop;
+    }
+}
+
+%searchbar__modal-header{
+    position: $searchbar-modal-header-position;
+    .close {
+        border: $searchbar-modal-header-close-border;
+        background-color: $searchbar-modal-header-close-background-color;
+        font-size: $searchbar-modal-header-close-font-size;
+        padding: $searchbar-modal-header-close-padding;
+        font-weight: $searchbar-modal-header-close-font-weight;
+        font-family: $searchbar-modal-header-close-font-family;
+        position: $searchbar-modal-header-close-position;
+        top: $searchbar-modal-header-close-top;
+        transform: $searchbar-modal-header-close-transform;
+        right: $searchbar-modal-header-close-right;
+        text-shadow: $searchbar-modal-header-close-text-shadow;
+        line-height: $searchbar-modal-header-close-line-height;
+    }
+}
+
+%searchbar__modal-body-title{
+    margin: $searchbar-modal-body-title-margin;
+    padding: $searchbar-modal-body-title-padding;
+    font-weight: $searchbar-modal-body-title-font-weight;
+    font-family: $searchbar-modal-body-title-font-family;
+    margin: $searchbar-modal-body-title-margin;
+    text-transform: $searchbar-modal-body-title-text-transform;        
+    font-size: $searchbar-modal-body-title-font-size;
+    line-height: $searchbar-modal-body-title-line-height;
+    display: $searchbar-modal-body-title-display;
+    @include media-tablet{
+        font-size: $searchbar-modal-body-title-font-size-tablet;
+        line-height: $searchbar-modal-body-title-line-height-tablet;
+    } 
+}
+
+%searchbar__form-content{
+    position: $searchbar-form-content-wrapper-position;
+    display: $searchbar-form-content-wrapper-display;
+    width: $searchbar-form-content-wrapper-width;
+    border: $searchbar-form-content-wrapper-border;
+
+    form {
+        margin: $searchbar-form-content-form-margin;
+    }
+
+    input {
+        margin: $searchbar-form-content-input-margin;
+        padding: $searchbar-form-content-input-padding;
+        border: $searchbar-form-content-input-border;
+        color: $searchbar-form-content-input-color;
+        font-size: $searchbar-form-content-input-font-size;
+        font-family: $searchbar-form-content-input-font-family;
+        outline: $searchbar-form-content-input-outline;
+        width: $searchbar-form-content-input-width;
+        background-color: $searchbar-form-content-input-background-color;
+        box-shadow: $searchbar-form-content-input-box-shadow;
+        border-radius: $searchbar-form-content-input-border-radius;
+        height: $searchbar-form-content-input-height;
+    }
+    button {
+        position: $searchbar-form-content-button-position;
+        top: $searchbar-form-content-button-top;
+        right: $searchbar-form-content-button-right;
+        font-size: $searchbar-form-content-button-font-size;
+        margin: $searchbar-form-content-button-margin;
+        padding: $searchbar-form-content-button-padding;
+        line-height: $searchbar-form-content-button-line-height;
+        text-transform: $searchbar-form-content-button-text-transform;
+        letter-spacing: $searchbar-form-content-button-letter-spacing;
+        color: $searchbar-form-content-button-color;
+        background-color: $searchbar-form-content-button-background-color;
+        border: $searchbar-form-content-button-border;
+        border-radius: $searchbar-form-content-button-border-radius;
+        height: $searchbar-form-content-button-height;
+        font-family: $searchbar-form-content-button-font-family;
+        display: $searchbar-form-content-button-display;
+        @include media-tablet{
+            display: $searchbar-form-content-button-display-tablet;
+        }
+
+    }
+}

@@ -1,0 +1,57 @@
+$footer-background: $primary-brand-color;
+
+.m-footer {
+	background-color: $footer-background;
+	color: $u-white;
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 0;
+
+	a {
+		color: $u-white;
+		text-decoration: underline;
+	}
+
+	&-logo {
+		width: 9rem;
+	}
+
+	.social {
+		color: $u-white;
+		display: flex;
+
+		svg {
+			height: 3rem;
+			margin: 0 0.5rem;
+			width: 3rem;
+		}
+	}
+
+	.link-list {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.inline-list {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 0 0.5rem 0 0;
+		}
+	}
+
+	.legal {
+		color: inherit;
+
+		svg {
+			height: 5rem;
+			width: 5rem;
+		}
+	}
+}

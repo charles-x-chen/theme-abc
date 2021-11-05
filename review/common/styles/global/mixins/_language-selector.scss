@@ -1,0 +1,38 @@
+%language-selector__container{
+    background-color: $language-selector-container-bg;
+    padding: $language-selector-container-padding;
+}
+%language-selector__wrapper{
+    display: $language-selector-wrapper-display;
+    margin: $language-selector-wrapper-margin;
+}
+%language-selector__list-wrapper{
+    margin: $language-selector-list-wrapper-margin;
+    padding: $language-selector-list-wrapper-padding;
+    list-style: $language-selector-list-wrapper-list-style;
+    text-align: $language-selector-list-wrapper-text-align;
+    font-weight: $language-selector-list-wrapper-font-weight;
+    font-family: $language-selector-list-wrapper-font-family;
+}
+%language-selector__list-item{
+    display: $language-selector-list-item-display;
+}
+%language-selector__list-item-link{
+    border-radius: $language-selector-link-border-radius;
+    padding: $language-selector-link-padding;
+    margin: $language-selector-link-margin;
+    display: $language-selector-link-display;
+    color: $color-global-white;
+    border: $language-selector-link-border;
+    &:link, &:visited {
+        text-transform: $language-selector-link-visited-text-transform;
+        letter-spacing: $language-selector-link-visited-letter-spacing;
+        font-size: $language-selector-link-visited-font-size;
+        color: $color-global-white;
+        text-decoration: $language-selector-link-visited-text-decoration;
+    }
+}
+%language-selector__list-item-active{
+    color: $language-selector-link-active-color;
+    border: $language-selector-link-active-border;
+}

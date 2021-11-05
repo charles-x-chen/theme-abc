@@ -1,0 +1,157 @@
+%dynamic-form-element-subheading {
+	font-size: $dynamic-form-element-subheading-fontsize;
+	text-align: $dynamic-form-element-subheading-textalign;
+	padding-top: $dynamic-form-element-subheading-padding-top;
+	margin: $dynamic-form-element-subheading-margin;
+	color: $dynamic-form-color-primary-dark;
+	text-transform: $dynamic-form-element-subheading-text-transform;
+	font-family: $font-primary;
+}
+
+%dynamic-form-element-label {
+	font-size: $dynamic-form-element-label-fontsize;
+	font-weight: $dynamic-form-element-label-fontweight;
+	color: $dynamic-form-color-primary-dark;
+	margin: $dynamic-form-element-label-margin;
+	font-family: $font-primary;
+
+	.required {
+		color: $dynamic-form-required-color;
+	}
+}
+
+%dynamic-form-input-element {
+	color: $dynamic-form-color-primary-dark;
+	background-color: $color-global-white;
+	border: $dynamic-form-element-border;
+	outline: $dynamic-form-global-value-zero;
+	font-size: $dynamic-form-element-label-fontsize;
+	height: $dynamic-form-global-value-auto;
+	width: $dynamic-form-global-value-100pc;
+	padding: $dynamic-form-input-element-padding;
+	text-align: $dynamic-form-input-element-text-align;
+	border-radius: $dynamic-form-global-value-zero;
+	font-family: $font-primary;
+
+	&:focus {
+		box-shadow: $dynamic-form-input-element-box-shadow;
+	}
+}
+
+%dynamic-form-checkbox-element {
+	width: $dynamic-form-global-value-auto;
+
+	&:before {
+		content: $dynamic-form-content-blank;
+		position: $dynamic-form-global-position-absolute;
+		top: $dynamic-form-global-value-zero;
+		left: $dynamic-form-global-value-zero;
+		z-index: $dynamic-form-checkbox-element-zindex;
+	}
+
+	&:after {
+		content: $dynamic-form-content-blank;
+		position: $dynamic-form-global-position-absolute;
+		cursor: $dynamic-form-global-cursor-pointer;
+		top: $dynamic-form-checkbox-element-after-top;
+		left: $dynamic-form-global-value-zero;
+		width: $dynamic-form-checkbox-element-after-width;
+		height: $dynamic-form-checkbox-element-after-width;
+		background-color: $color-global-white;
+		border: $dynamic-form-element-border;
+	}
+
+	&:checked:before {
+		-webkit-transform: $dynamic-form-checkbox-element-transform;
+		transform: $dynamic-form-checkbox-element-transform;
+		background-color: $dynamic-form-checkbox-element-background-color;
+		border: $dynamic-form-checkbox-element-border;
+		border-top-style: $dynamic-form-global-value-none;
+		border-right-style: $dynamic-form-global-value-none;
+		top: $dynamic-form-checkbox-element-top;
+		height: $dynamic-form-checkbox-element-height;
+		width: $dynamic-form-checkbox-element-width;
+		left: $dynamic-form-checkbox-element-left;
+	}
+}
+
+%dynamic-form-dropdown-element {
+	position: $dynamic-form-dropdown-element-position;
+	float: $dynamic-form-global-value-none;
+	width: $dynamic-form-global-value-100pc;
+
+	select {
+		-webkit-appearance: $dynamic-form-global-value-none;
+		-moz-appearance: $dynamic-form-global-value-none;
+		-ms-appearance: $dynamic-form-global-value-none;
+		appearance: $dynamic-form-global-value-none;
+		margin: $dynamic-form-dropdown-element-margin;
+		padding: $dynamic-form-dropdown-element-padding;
+		color: $dynamic-form-color-primary-dark;
+		background-color: $color-global-white;
+		border: $dynamic-form-element-border;
+		outline: $dynamic-form-global-value-zero;
+		height: $dynamic-form-global-value-auto;
+		width: $dynamic-form-global-value-100pc;
+		text-align: $dynamic-form-input-element-text-align;
+		border-radius: $dynamic-form-global-value-zero;
+		font-size: $dynamic-form-dropdown-element-font-size;
+		font-family: $font-primary;
+
+		&:focus {
+			box-shadow: $dynamic-form-input-element-box-shadow;
+		}
+	}
+
+	&:before {
+		right: $dynamic-form-global-value-zero;
+		width: $dynamic-form-dropdown-element-width;
+		height: $dynamic-form-global-value-100pc;
+		background: $dynamic-form-dropdown-element-background;
+		content: $dynamic-form-content-blank;
+		position: $dynamic-form-global-position-absolute;
+		pointer-events: $dynamic-form-global-value-none;
+	}
+
+	&:after {
+		border-top: $dynamic-form-dropdown-element-border-top;
+		border-right: $dynamic-form-dropdown-element-border-other;
+		border-bottom: $dynamic-form-dropdown-element-border-other;
+		border-left: $dynamic-form-dropdown-element-border-other;
+
+		color: $dynamic-form-color-secondary;
+		top: $dynamic-form-dropdown-element-top;
+		right: $dynamic-form-dropdown-element-right;
+		cursor: $dynamic-form-global-cursor-pointer;
+		content: $dynamic-form-content-blank;
+		position: $dynamic-form-global-position-absolute;
+		pointer-events: $dynamic-form-global-value-none;
+	}
+}
+
+%dynamic-form-controls {
+	position: $dynamic-form-dropdown-element-position;
+	float: $dynamic-form-global-value-none;
+	width: $dynamic-form-global-value-100pc;
+}
+
+%dynamic-form-privacy-policy-subheading {
+	text-align: $dynamic-form-input-element-text-align;
+	text-transform: $dynamic-form-privacy-policy-subheading-text-transform;
+}
+
+%dynamic-form-legal-info {
+	.optIns {
+		font-size: $dynamic-form-legal-info-optins-font-size;
+		line-height: $dynamic-form-legal-info-optins-line-height;
+		margin-bottom: $dynamic-form-legal-info-optins-margin-bottom;
+		color: $color-global-grey-60;
+		font-style: $dynamic-form-legal-info-optins-font-style;
+		font-weight: $dynamic-form-element-label-fontweight;
+		font-family: $font-primary;
+
+		.optInLinks {
+			text-decoration: $dynamic-form-optins-text-decoration;
+		}
+	}
+}

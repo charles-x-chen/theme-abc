@@ -1,0 +1,23 @@
+$base-font-size: 16;
+
+
+$column-default: 20;
+
+
+// $grid-gutter-hor-zero: ~`pxToEm(20, "#{$base-font-size}")`;
+// $grid-gutter-hor-phablet: ~`pxToEm(20, "#{$base-font-size}")`;
+// $grid-gutter-hor-tablet: ~`pxToEm(20, "#{$base-font-size}")`;
+// $grid-gutter-hor-desktop: ~`pxToEm(30, "#{$base-font-size}")`;
+// $grid-gutter-hor-desktop-wide: ~`pxToEm(30, "#{$base-font-size}")`;
+// $grid-gutter-ver-zero: ~`pxToEm(15, "#{$base-font-size}")`;
+// $grid-gutter-ver-phablet: ~`pxToEm(15, "#{$base-font-size}")`;
+// $grid-gutter-ver-tablet: ~`pxToEm(15, "#{$base-font-size}")`;
+// $grid-gutter-ver-desktop: ~`pxToEm(20, "#{$base-font-size}")`;
+// $grid-gutter-ver-desktop-wide: ~`pxToEm(20, "#{$base-font-size}")`;
+
+
+$breakpoint-zero: 0;
+$breakpoint-phablet: 500px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-desktop-wide: 1336px;

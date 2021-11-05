@@ -1,0 +1,51 @@
+%parallax-background__wrapper{
+    position: $parallax-background-wrapper-position;
+    background-size: $parallax-background-bg-size;
+    min-height: $parallax-background-min-height;
+    width: $parallax-background-width;
+    margin: $parallax-background-margin;
+    display: $parallax-background-display;
+    justify-content: $parallax-background-justify-content;
+    align-items: $parallax-background-align-items;
+    background-attachment: $parallax-background-bg-attachment;
+    background-position: $parallax-background-bg-position;
+    @include media-desktop {
+        min-height: $parallax-background-min-height-desktop;
+        margin: $parallax-background-margin-desktop;
+    }
+    @include media-tablet {
+        min-height: $parallax-background-min-height-tablet;
+        margin: $parallax-background-margin-tablet;
+    }
+    &:before {
+        content: $parallax-background-before-content;
+        position: $parallax-background-before-position;
+        top: $parallax-background-before-top-position;
+        left: $parallax-background-before-left-position;
+        bottom: $parallax-background-before-bottom-position;
+        right: $parallax-background-before-right-position;
+        background-color: $parallax-background-bg-color;
+    }
+}
+%parallax-background__heading{
+    color: $color-global-white;
+    $parallax-background-heading-line-height: 1.25;
+    $parallax-background-heading-z-index: 1;
+    $parallax-background-heading-margin-bottom: 0;
+    $parallax-background-heading-padding: 14px;
+    $parallax-background-heading-margin: 0px;
+    $parallax-background-heading-text-align: center;
+    $parallax-background-heading-font-size: 1.5rem;
+    $parallax-background-heading-font-weight: 100;
+    $parallax-background-heading-letter-spacing: 0.1em;
+    @include media-desktop {
+        font-size: $parallax-background-heading-font-size-desktop;
+        letter-spacing: $parallax-background-heading-letter-spacing-desktop;
+        font-weight: $parallax-background-heading-font-weight-desktop;
+    }
+    @include media-tablet {
+        font-size: $parallax-background-heading-font-size-tablet;
+        letter-spacing: $parallax-background-heading-letter-spacing-tablet;
+        font-weight: $parallax-background-heading-font-weight-tablet;
+    }
+}

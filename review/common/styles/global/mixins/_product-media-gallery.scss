@@ -1,0 +1,56 @@
+%cmp-product-media-gallery__container{
+    margin: $product-media-gallery-container-margin;
+    @include media-tablet {
+        margin: $product-media-gallery-container-margin-tablet;
+        padding: $product-media-gallery-container-padding-tablet;
+    }
+}
+%cmp-product-media-gallery__wrapper {
+	background-color: $product-media-gallery-wrapper-bg;
+    position: $product-media-gallery-position-relative;
+}	
+%cmp-product-media-gallery__zoom-button {
+    width: $product-media-gallery-zoom-button-width;
+    height: $product-media-gallery-zoom-button-height;
+    padding: $product-media-gallery-zoom-button-padding;
+    border-radius: $product-media-gallery-zoom-button-border-radius;
+    margin: $product-media-gallery-zoom-button-margin;
+    position: $product-media-gallery-position-absolute;
+    top: $product-media-gallery-zoom-button-top;
+    right: $product-media-gallery-zoom-button-right;
+    background: $color-global-white;
+    cursor: $product-media-gallery-zoom-button-cursor;
+    &::before {
+        content: $product-media-gallery-zoom-icon-content;
+        font-size: $product-media-gallery-zoom-icon-font-size;
+        position: $product-media-gallery-position-absolute;
+        top: $product-media-gallery-zoom-icon-top;
+        left: $product-media-gallery-zoom-icon-left;
+        color: $product-media-gallery-zoom-icon-color;
+    }
+}
+%cmp-product-media-gallery__img {
+    display: $product-media-gallery-img-display;
+    max-width: $product-media-gallery-img-max-width;
+    margin: $product-media-gallery-img-margin;
+    padding: $product-media-gallery-img-padding;
+}
+%cmp-product-media-gallery__modal {
+    position: $product-media-gallery-position-fixed;
+    top: $product-media-gallery-modal-top;
+    left: $product-media-gallery-modal-left;
+    width: $product-media-gallery-modal-width;
+    height: $product-media-gallery-modal-height;
+    background-color: $color-global-white;
+    opacity: $product-media-gallery-modal-opacity;
+    visibility: $product-media-gallery-modal-visibility;
+    transition: $product-media-gallery-modal-transition;
+    background-repeat: $product-media-gallery-modal-bg-repeat;
+    background-attachment: $product-media-gallery-modal-bg-attachment;
+    background-position: $product-media-gallery-modal-bg-position;
+}
+%cmp-product-media-gallery__media-show-modal {
+    opacity: $product-media-gallery-modal-show-opacity;
+    visibility: $product-media-gallery-modal-show-visibility;
+    transition: $product-media-gallery-modal-show-transition;
+}

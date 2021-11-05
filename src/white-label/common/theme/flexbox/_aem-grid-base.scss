@@ -1,0 +1,21 @@
+/* grid component */
+.aem-Grid {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+}
+
+/* placeholder for new components */
+.aem-Grid-newComponent {
+	margin: 0;
+}
+
+/* column of a grid */
+.aem-GridColumn {
+	box-sizing: border-box;
+}
+
+/* force showing hidden */
+.aem-GridShowHidden > .aem-Grid > .aem-GridColumn {
+	display: block !important;
+}

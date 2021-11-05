@@ -1,0 +1,81 @@
+%video-container{
+    position: $video-container-position;
+}
+
+%video-container-image{
+    aspect-ratio: $video-image-aspect-ratio;
+    object-fit: $video-image-object-fit;
+    @include media-desktop {
+        aspect-ratio: $video-image-tablet-aspect-ratio;
+    }
+}
+
+%video-container-player{
+    height: $video-player-height;
+    @include media-desktop {
+        min-height: $video-player-min-height;
+    }
+}
+
+%video-overlay-content {
+    position: $video-content-position;
+    top: $video-content-top;
+    left: $video-content-left;
+    transform: $video-content-transform;
+    text-align: $video-content-text-align;
+    color: $video-content-color;
+    font-weight: $video-content-font-weight;
+    width: $video-content-width;
+}
+
+%video-overlay-content-subheading {
+    font-family: $video-content-subheading-font-family;
+    font-size: $video-content-subheading-font-size;
+    margin: $video-content-subheading-margin;
+    @include media-desktop {
+        font-size: $video-content-subheading-tablet-font-size;
+    }
+}
+
+%video-overlay-content-heading {
+    font-family: $video-content-heading-font-family;
+    font-size: $video-content-heading-font-size;
+    margin: $video-content-heading-margin;
+    @include media-desktop {
+        font-size: $video-content-heading-tablet-font-size;
+    }
+}
+
+%video-overlay-content-description {
+    font-family: $video-content-heading-font-family;
+    font-size: $video-content-description-font-size;
+    margin: $video-content-description-margin;
+    @include media-desktop {
+        font-size: $video-content-description-tablet-font-size;
+    }
+}
+
+%video-container-playicon {
+    position: $video-content-position;
+    left: $video-content-left;
+    top: $video-content-left;
+    transform: $video-content-transform;
+    cursor: $video-container-playicon-cursor;
+    svg {
+        width: $video-container-playicon-svg-width;
+        height: $video-container-playicon-svg-height;
+        @include media-desktop {
+            width: $video-container-playicon-svg-tablet-width;
+            height: $video-container-playicon-svg-tablet-height;
+        }
+    }
+}
+
+%video-container-load {
+    position: $video-container-load-position;
+    left: $video-container-load-left;
+    top: $video-container-load-top;
+    width: $video-container-load-width;
+    height: $video-container-load-height;
+    overflow: $video-container-load-overflow;
+}

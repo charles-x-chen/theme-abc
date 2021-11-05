@@ -1,0 +1,7 @@
+// Fix for infinite height issue in authoring mode due to first fixed div
+// Only used in edit mode | preview mode
+// Used by AEM developers
+.edit-preview-infinte-fix {
+	height: px-to-em(1);
+	position: relative;
+}

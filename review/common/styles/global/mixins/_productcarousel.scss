@@ -1,0 +1,103 @@
+%productcarousel__title--primary {
+    font-family: $productcarousel-primary-title-font-family;
+    font-size: $productcarousel-primary-title-font-size;
+    font-weight: $productcarousel-primary-title-font-weight;
+    color: $productcarousel-primary-title-color;
+    line-height: $productcarousel-primary-title-line-height;
+    text-align: $productcarousel-primary-text-align;
+    margin:  $productcarousel-primary-title-margin;
+	padding-bottom: $productcarousel-primary-title-padding-bottom;
+	text-transform: $productcarousel-primary-title-text-transform;
+}
+
+%productcarousel__container--primary {
+    position: $productcarousel-primary-container-position;
+    margin: $productcarousel-primary-container-margin;
+    width: $productcarousel-primary-container-width;
+  
+    @include media-desktop {
+        width: $productcarousel-primary-container-desktop-width;
+    }
+    @include media-desktop-wide {
+        width: $productcarousel-primary-container-desktop-wide-width;
+    }
+}
+
+%productcarousel__card--primary {
+    font-family: $productcarousel-primary-card-font-family;
+    font-size: $productcarousel-primary-card-font-size;
+    font-weight: $productcarousel-primary-card-font-weight;
+    border: $productcarousel-primary-card-border;
+    float: $productcarousel-primary-card-float;
+    text-align: $productcarousel-primary-text-align;
+    width: $productcarousel-primary-card-width;
+    @include media-desktop  {
+        font-size: $productcarousel-primary-card-desktop-font-size;
+        width: $productcarousel-primary-card-desktop-width;
+    }
+}
+
+%productcarousel__link--primary {
+    color:$productcarousel-primary-link-color;
+    text-decoration: $productcarousel-primary-link-text-decoration;
+    &:hover {
+        color: $productcarousel-primary-link-hover-color;;
+    }
+}
+
+%productcarousel__btn--primary {
+    background: $productcarousel-primary-btn-background;
+    border: $productcarousel-primary-btn-border;
+    box-shadow: $productcarousel-primary-btn-box-shadow;
+    outline: $productcarousel-primary-btn-outline;
+    cursor: $productcarousel-primary-btn-cursor;
+    height: $productcarousel-primary-btn-height;
+    margin-top: $productcarousel-primary-btn-margin-top;
+    position: $productcarousel-primary-btn-position;
+    top: $productcarousel-primary-btn-top;
+    width: $productcarousel-primary-btn-width;
+    @include media-desktop  {
+        top: $productcarousel-primary-desktop-btn-top;
+    }
+}
+
+%productcarousel__btnnext--primary {
+    border-bottom: $productcarousel-primary-btnnext-border-bottom;
+    border-right: $productcarousel-primary-btnnext-border-right;
+    right: $productcarousel-primary-btnnext-right;
+    -moz-transform: $productcarousel-primary-btnnext-transform;
+    -webkit-transform: $productcarousel-primary-btnnext-transform;
+    transform: $productcarousel-primary-btnnext-transform;
+    @include media-desktop {
+        right: $productcarousel-primary-btnnext-desktop-right;
+    }
+}
+
+%productcarousel__btnprev--primary {
+    border-bottom: $productcarousel-primary-btnprev-border-bottom;
+    border-left: $productcarousel-primary-btnprev-border-left;
+    left: $productcarousel-primary-btnprev-left;
+    -moz-transform: $productcarousel-primary-btnprev-transform;
+    -webkit-transform: $productcarousel-primary-btnprev-transform;
+    transform: $productcarousel-primary-btnprev-transform;
+    @include media-desktop {
+        left: $productcarousel-primary-btnprev-desktop-left;
+    }
+}
+
+%productcarousel-related-products-fixed {
+    position: $productcarousel-related-products-fixed-position;
+    left: $productcarousel-related-products-fixed-left;
+    bottom: $productcarousel-related-products-fixed-bottom;
+    background-color: $productcarousel-related-products-fixed-background;
+    z-index: $productcarousel-related-products-fixed-z-index;
+    box-shadow: $productcarousel-related-products-fixed-box-shadow;
+    margin: $productcarousel-related-products-fixed-margin;
+    opacity: $productcarousel-related-products-fixed-opacity;
+    transition: $productcarousel-related-products-fixed-transition;
+        @include media-desktop{
+        width: $productcarousel-related-products-fixed-width;
+        top: $productcarousel-related-products-fixed-top;
+        height: $productcarousel-related-products-fixed-height;
+        }
+}

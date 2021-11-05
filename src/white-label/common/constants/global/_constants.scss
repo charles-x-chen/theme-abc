@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+$image-lockup: 'images/default.png';
+$image-default: 'images/default-white.png';
+$image-lockup-white: 'images/lockup.png';
+$image-default-white: 'images/lockup-white.png';
+
+$primary-brand-color: rgb(54, 60, 72);
+$secondary-brand-color: rgb(67, 111, 123);
+$tertiary-brand-color: optional;
+
+$secondary-background: #f30501;
+
+$u-black: rgb(0, 0, 0);
+$u-dark-grey: rgb(104, 108, 117);
+$u-mid-grey: rgb(216, 220, 227);
+$u-light-grey: rgb(244, 245, 246);
+$u-white: rgb(255, 255, 255);
+
+$u-rag-positive: rgb(105, 188, 54);
+$u-rag-neutral: rgb(255, 197, 28);
+$u-rag-warning: rgb(223, 64, 54);
+
+$primary-brand-font: Arial, Helvetica, sans-serif;
+$secondary-brand-font: 'Times New Roman', Times, serif;
+$tertiary-brand-font: optional;
+
+$u-font-sm: 0.8;
+$u-font-md: 1;
+$u-font-lg: 1.2;
+$u-font-xl: 1.4;
+$u-font-xxl: 1.6;
+
+$u-text-left: left;
+$u-text-center: center;
+$u-text-right: right;
+$u-text-default: $u-black;
+$u-text-inverse: $u-white;
+
+$u-success: $u-rag-positive;
+$u-warning: $u-rag-neutral;
+$u-error: $u-rag-warning;
+
+$u-heading-1-desktop: 4rem;
+$u-heading-1-tablet: 3.8rem;
+$u-heading-1-mobile: 3.6rem;
+$u-heading-2-desktop: 3.5rem;
+$u-heading-2-tablet: 3.4rem;
+$u-heading-2-mobile: 3.2rem;
+$u-heading-3-desktop: 3rem;
+$u-heading-3-tablet: 2.8rem;
+$u-heading-3-mobile: 2.6rem;
+$u-heading-4-desktop: 2.5rem;
+$u-heading-4-tablet: 2.3rem;
+$u-heading-4-mobile: 2.1rem;
+$u-heading-5-desktop: 2rem;
+$u-heading-5-tablet: 1.8rem;
+$u-heading-5-mobile: 1.6rem;
+$u-heading-6-desktop: 1.5rem;
+$u-heading-6-tablet: 1.3rem;
+$u-heading-6-mobile: 1.1rem;
+$u-sub-heading: 0.75;
+$u-small-text: 1.1rem;
+$u-micro-text: 1rem;
+$u-body-desktop: 1.6rem;
+$u-body-tablet: 1.5rem;
+$u-body-mobile: 1.4rem;
+
+$base-font: $primary-brand-font !default;
+$base-font-size: $u-body-desktop !default;
+$base-line-height: 1.618 !default;
+
+$bg-color: $u-white;
+$txt-color: $u-black;
+
+$btn-color: $u-black;
+$btn-border-width: 0.2rem;
+$btn-color-inverse: $u-white;

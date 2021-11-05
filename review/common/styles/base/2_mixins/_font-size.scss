@@ -1,0 +1,15 @@
+@mixin font-size($coefficient, $base: 1em, $scale: $golden, $maximum: 6) {
+	font-size: modular-scale($coefficient, $base, $scale);
+	line-height: $coefficient * ((1.25 - 1.45) / $maximum) + 1.45;
+	margin: ($base / $scale) 0 ($base / $scale / $scale) 0;
+	max-width: 35 * modular-scale($coefficient);
+	width: 100%;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

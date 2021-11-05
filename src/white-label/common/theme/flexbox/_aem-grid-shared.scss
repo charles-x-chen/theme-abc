@@ -1,0 +1,46 @@
+/* maximum amount of grid cells to be provided */
+$max_col: 12 !default;
+$grid-gutter-width: 0;
+
+/* default breakpoint */
+.aem-Grid {
+	@include generate-grid(default, $max_col);
+	width: auto;
+}
+@media (min-width: 1201px) {
+	.aem-Grid {
+		@include generate-grid-hide(default);
+	}
+}
+
+/* phone breakpoint */
+@media (max-width: 650px) {
+	.aem-Grid {
+		@include generate-grid(phone, $max_col);
+		@include generate-grid-hide(phone);
+	}
+}
+
+/* tablet breakpoint */
+@media (min-width: 651px) and (max-width: 1200px) {
+	.aem-Grid {
+		@include generate-grid(tablet, $max_col);
+		@include generate-grid-hide(tablet);
+	}
+}
+
+.aem-GridColumn {
+	padding-left: $grid-gutter-width/2;
+	padding-right: $grid-gutter-width/2;
+}
+
+.responsivegrid.aem-GridColumn.aem-GridColumn--default--16 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.responsivegrid.aem-GridColumn.aem-GridColumn--default--16
+	> .aem-GridColumn.aem-GridColumn--default--16 {
+	padding-left: 0;
+	padding-right: 0;
+}

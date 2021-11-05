@@ -1,0 +1,14 @@
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@if type-of($number) == 'string' {
+		$number: str-replace($number, 'px');
+		$number: str-replace($number, 'em');
+		$number: str-replace($number, 'rem');
+		@return number($number);
+	}
+
+	@return number($number);
+}

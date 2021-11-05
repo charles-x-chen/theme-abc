@@ -1,0 +1,183 @@
+@-webkit-keyframes slideInLeft {
+    from {
+        visibility: $header-primary-slideinleft-visibility;
+        transform: $header-primary-slideinleft-transform-from;
+    }
+    to {
+        transform: $header-primary-slideinleft-transform-to;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        visibility: $header-primary-slideinleft-visibility;
+        transform: $header-primary-slideinleft-transform-from;
+    }
+    to {
+        transform: $header-primary-slideinleft-transform-to;
+    }
+}
+
+@mixin slide-in-left($duration){
+    -webkit-animation-duration: $duration;
+    animation-duration: $duration;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slideInLeft;
+}
+
+%header__container--primary {
+    font-weight: $header-primary-container-font-weight;
+	font-size: $header-primary-container-font-size;
+	background: $color-global-primary;
+	text-align:  $header-primary-container-text-align;
+	padding:  $header-primary-container-padding;
+	position:  $header-primary-container-position;
+    top: $header-primary-container-top-position;
+	left: $header-primary-container-left-position;
+    right: $header-primary-container-right-position;
+    width: $header-primary-container-width;
+	z-index: $header-primary-container-zindex;
+}
+%header__cmp-image-title--primary{
+    position: $header-primary-cmp-image-title-position;
+    width: $header-primary-cmp-image-title-width;
+    height: $header-primary-cmp-image-title-height;
+    padding: $header-primary-cmp-image-title-padding;
+    margin: $header-primary-cmp-image-title-margin;
+    overflow: $header-primary-cmp-image-title-overflow;
+    clip: $header-primary-cmp-image-title-clip;
+    white-space: $header-primary-cmp-image-title-white-space; 
+    border: $header-primary-cmp-image-title-border;
+}
+
+%header__mobilenav--primary {
+    background:  $header-primary-mobilenav-background;
+    z-index:  $header-primary-mobilenav-zindex;
+    width:  $header-primary-mobilenav-width;
+    position:  $header-primary-mobilenav-position;
+    height: $header-primary-mobilenav-height;
+    overflow-y: $header-primary-mobilenav-overflow-y;
+    top: $header-primary-mobilenav-top; 
+}
+
+%header__ul--primary {
+    list-style: $header-primary-ul-list-style;
+    margin: $header-primary-ul-margin;
+    padding: $header-primary-ul-padding;
+    display: $header-primary-ul-display;
+    @include slide-in-left(.25s);
+}
+
+%header__li--primary {
+    display: $header-primary-li-display;
+    padding: $header-primary-li-padding;
+    border-bottom: $header-primary-li-border-bottom;
+    @include slide-in-left(1s);
+}
+
+%header__link--primary {
+    font-size: $header-primary-link-font-size;
+    line-height: $header-primary-link-line-height;
+    letter-spacing: $header-primary-link-letter-spacing;
+    transition: $header-primary-link-transition;
+    color: $header-primary-link-color;
+    text-decoration: $header-primary-link-text-decoration;
+    font-weight: $header-primary-link-font-weight;
+    font-family: $header-primary-link-font-family;
+    padding: $header-primary-link-padding;
+    display: $header-primary-link-display;
+    text-align: $header-primary-link-text-align;
+    text-transform: $header-primary-link-text-transform;
+}
+
+%header__image--primary {
+    width: $header-primary-image-width;
+    display: $header-primary-image-display;
+}
+
+%header__button--primary {
+    width: $header-primary-button-width;
+    height: $header-primary-button-height;
+    display: $header-primary-button-display;
+    position: $header-primary-button-position;
+}
+
+%header__buttoncmp--primary {
+    width: $header-primary-buttoncmp-width;
+    height: $header-primary-buttoncmp-height;
+    color: $header-primary-buttoncmp-color;
+    font-size: $header-primary-buttoncmp-font-size;
+    font-family: $header-primary-buttoncmp-font-family;
+    font-weight: $header-primary-buttoncmp-font-weight;
+    letter-spacing: $header-primary-buttoncmp-letter-spacing;
+    text-indent: $header-primary-buttoncmp-text-indent;
+    border: $header-primary-buttoncmp-border;
+    background: $header-primary-buttoncmp-background;
+    padding: $header-primary-buttoncmp-padding;
+    overflow: $header-primary-buttoncmp-overflow;
+    position: $header-primary-buttoncmp-position;
+
+    &:hover {
+        background: $color-magnu-nav-button-background-color;
+        color: $color-global-white;
+    }
+}
+%header__cmp-button-second--primary {
+    left: $header-primary-cmp-button-second-left;
+    .cmp-button{
+        &:before,&:after, .cmp-button__icon {
+            width: $header-primary-cmp-button-second-child-width;
+            height: $header-primary-cmp-button-second-child-height;
+            content: $header-primary-cmp-button-second-child-content;
+            background-color: $header-primary-cmp-button-second-child-background-color;
+            transition: $header-primary-cmp-button-second-child-transition;
+            position: $header-primary-cmp-button-second-child-position;
+            left: $header-primary-cmp-button-second-child-left;
+        }
+
+        &:before { 
+            top: $header-primary-cmp-button-second-before-top;
+        }
+
+        &:after { 
+            top: $header-primary-cmp-button-second-after-top; 
+        }
+
+        .cmp-button__icon { 
+            top:$header-primary-cmp-button-second-icon-top; 
+        }
+        
+        &.menu-icon {
+
+            &:before { 
+                top: $header-primary-cmp-button-second-menu-icon-before-top; 
+                transform: $header-primary-cmp-button-second-menu-icon-before-transform; 
+            }
+
+            &:after { 
+                top: $header-primary-cmp-button-second-menu-icon-after-top; 
+                transform: $header-primary-cmp-button-second-menu-icon-after-transform; 
+            }
+
+            .cmp-button__icon { 
+                width: $header-primary-cmp-button-second-menu-icon-width; 
+            }
+        }
+    }	
+}
+
+%header__cmp-button-third--primary {
+    right: $header-primary-cmp-button-third-right;
+
+    .cmp-button:before {
+        width: $header-primary-cmp-button-third-before-width;
+        height: $header-primary-cmp-button-third-before-height;
+        content: $header-primary-cmp-button-third-before-content;
+        background-image: $header-primary-cmp-button-third-before-background-image;
+        background-size: $header-primary-cmp-button-third-before-background-size;
+        display: $header-primary-cmp-button-third-before-display;
+        float: $header-primary-cmp-button-third-before-float;
+        margin-right: $header-primary-cmp-button-third-before-margin-right;
+    }
+}

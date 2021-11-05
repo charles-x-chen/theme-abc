@@ -1,0 +1,59 @@
+%form-preference-center{
+    background-color: $form-preference-center-background-color;
+    padding: $form-preference-center-padding;
+    overflow: $form-preference-center-overflow;
+}
+
+%form-gigya-screen-caption{
+    font-size: $form-gigya-screen-caption-font-size;
+    text-align: $form-gigya-screen-caption-text-align;
+    font-weight: $form-gigya-screen-caption-font-weight;
+    border-bottom: $form-gigya-screen-caption-border-bottom;
+    text-transform: $form-gigya-screen-caption-text-transform;
+}
+
+%form-gigya-composite-control-submit{
+    text-align: $form-gigya-screen-caption-text-align;
+}
+
+%form-gigya-screen-portrait{
+    padding-left: $form-gigya-screen-portrait-padding-left;
+    padding-right: $form-gigya-screen-portrait-padding-right;
+    padding-top: $form-gigya-screen-portrait-padding-top;
+    width: $form-gigya-screen-portrait-width;
+    max-width: $form-gigya-screen-portrait-max-width;
+}
+
+%form-gigya-input-submit{
+    color: $form-gigya-input-submit-color;
+    border: $form-gigya-input-submit-border;
+    background: $form-gigya-input-submit-background;
+    font-size: $form-gigya-input-submit-font-size;
+    font-family: $form-gigya-input-submit-font-family;
+    text-transform: $form-gigya-screen-caption-text-transform;
+    text-decoration: $form-gigya-screen-caption-border-bottom;
+    letter-spacing: $form-gigya-input-submit-letter-spacing;
+    padding: $form-gigya-input-submit-padding;
+    display: $form-gigya-input-submit-display;
+    width: $form-gigya-input-submit-width;
+    @include media-tablet {
+        font-size: $form-gigya-input-submit-tablet-font-size;
+        letter-spacing: $form-gigya-input-submit-tablet-letter-spacing;
+        padding: $form-gigya-input-submit-tablet-padding;
+    }
+    &:hover{
+        color: $form-gigya-input-submit-background;
+        border: $form-gigya-input-submit-border;
+        background: $form-gigya-input-submit-color;
+        @include media-tablet {
+            font-size: $form-gigya-input-submit-tablet-font-size;
+            letter-spacing: $form-gigya-input-submit-tablet-letter-spacing;
+        }
+    }
+}
+
+%form-gigya-composite-control-header{
+    color: $form-gigya-input-submit-background;
+    font-size: $form-gigya-composite-control-header-font-size;
+    font-weight: $form-gigya-screen-caption-font-weight;
+}

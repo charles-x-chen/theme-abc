@@ -1,0 +1,163 @@
+/**
+ *
+ * PLEASE DO NOT MODIFY THIS FILE
+ * This is a copy of global code and will be inherited in future from global,
+ * Update the relevant variables at a brand level instead or contact Charlie.
+ *
+ **/
+
+%header--primary   {
+	color: $header-primary-color;
+	font-size: $header-primary-font-size;
+	font-family: $header-primary-font-family;
+	font-weight: $header-primary-font-weight;
+	line-height: $header-primary-line-height;
+	text-transform: $header-primary-text-transform;
+	letter-spacing: $header-primary-letter-spacing;
+	text-decoration: $header-primary-text-decoration;
+	font-weight: $header-primary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $header-primary-color-hover;
+		transition: $header-primary-transition-hover;
+		text-decoration: $header-primary-text-decoration-hover;
+	}
+}
+
+%header--secondary {
+	color: $header-secondary-color;
+	font-size: $header-secondary-font-size;
+	font-family: $header-secondary-font-family;
+	font-weight: $header-secondary-font-weight;
+	line-height: $header-secondary-line-height;
+	text-transform: $header-secondary-text-transform;
+	letter-spacing: $header-secondary-letter-spacing;
+	text-decoration: $header-secondary-text-decoration;
+	font-weight: $header-secondary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $header-secondary-color-hover;
+		transition: $header-secondary-transition-hover;
+		text-decoration: $header-secondary-text-decoration-hover;
+	}
+}
+
+%header--tertiary  {
+	color: $header-tertiary-color;
+	font-size: $header-tertiary-font-size;
+	font-family: $header-tertiary-font-family;
+	font-weight: $header-tertiary-font-weight;
+	line-height: $header-tertiary-line-height;
+	text-transform: $header-tertiary-text-transform;
+	letter-spacing: $header-tertiary-letter-spacing;
+	text-decoration: $header-tertiary-text-decoration;
+	font-weight: $header-tertiary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $header-tertiary-color-hover;
+		transition: $header-tertiary-transition-hover;
+		text-decoration: $header-tertiary-text-decoration-hover;
+	}
+}
+
+%text--primary {
+	color: $text-primary-color;
+	font-size: $text-primary-font-size;
+	font-family: $text-primary-font-family;
+	line-height: $text-primary-line-height;
+	text-transform: $text-primary-text-transform;
+	letter-spacing: $text-primary-letter-spacing;
+	text-decoration: $text-primary-text-decoration;
+	font-weight: $text-primary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $text-primary-color-hover;
+		transition: $text-primary-transition-hover;
+		text-decoration: $text-primary-text-decoration-hover;
+	}
+}
+
+%text--secondary {
+	color: $text-secondary-color;
+	font-size: $text-secondary-font-size;
+	font-family: $text-secondary-font-family;
+	line-height: $text-secondary-line-height;
+	text-transform: $text-secondary-text-transform;
+	letter-spacing: $text-secondary-letter-spacing;
+	text-decoration: $text-secondary-text-decoration;
+	font-weight: $text-secondary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $text-secondary-color-hover;
+		transition: $text-secondary-transition-hover;
+		text-decoration: $text-secondary-text-decoration-hover;
+	}
+}
+
+%text--tertiary  {
+	color: $text-tertiary-color;
+	font-size: $text-tertiary-font-size;
+	font-family: $text-tertiary-font-family;
+	line-height: $text-tertiary-line-height;
+	text-transform: $text-tertiary-text-transform;
+	letter-spacing: $text-tertiary-letter-spacing;
+	text-decoration: $text-tertiary-text-decoration;
+	font-weight: $text-tertiary-font-weight;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $text-tertiary-color-hover;
+		transition: $text-tertiary-transition-hover;
+		text-decoration: $text-tertiary-text-decoration-hover;
+	}
+}
+
+%anchor--primary {
+	color: $anchor-primary-color;
+	text-decoration: $anchor-primary-text-decoration;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $anchor-primary-color-hover;
+		transition: $anchor-primary-transition-hover;
+		text-decoration: $anchor-primary-text-decoration-hover;
+	}
+}
+
+%anchor--secondary {
+	color: $anchor-secondary-color;
+	text-decoration: $anchor-secondary-text-decoration;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $anchor-secondary-color-hover;
+		transition: $anchor-secondary-transition-hover;
+		text-decoration: $anchor-secondary-text-decoration-hover;
+	}
+}
+
+%anchor--tertiary  {
+	color: $anchor-tertiary-color;
+	text-decoration: $anchor-tertiary-text-decoration;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $anchor-tertiary-color-hover;
+		transition: $anchor-tertiary-transition-hover;
+		text-decoration: $anchor-tertiary-text-decoration-hover;
+	}
+}

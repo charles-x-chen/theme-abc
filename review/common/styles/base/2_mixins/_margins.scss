@@ -1,0 +1,8 @@
+@mixin margins-ver($margin-hor, $coeff: 1) {
+	margin-bottom: 0;
+	margin-top: $margin-hor * $coeff;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}

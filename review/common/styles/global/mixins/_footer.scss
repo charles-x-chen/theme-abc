@@ -1,0 +1,89 @@
+%footer-experiencefragment {
+	color: $footer-experiencefragment-color;
+	font-weight: $footer-experiencefragment-font-weight;
+	font-size: $footer-experiencefragment-font-size;
+	text-align: $footer-experiencefragment-text-align;
+	background: $footer-experiencefragment-background;
+	padding: $footer-experiencefragment-padding;
+    font-family: $footer-experiencefragment-font-family;    
+    text-transform: $footer-experiencefragment-text-transform;
+    letter-spacing: $footer-experiencefragment-letter-spacing;
+    text-decoration: $footer-experiencefragment-text-decoration;
+}
+
+%footer-experiencefragment-ul {
+    list-style: $footer-experiencefragment-ul-list-style;
+    padding: $footer-experiencefragment-ul-padding;
+    li {
+        margin-bottom: $footer-experiencefragment-ul-li-margin;
+        a {            
+            color: $footer-experiencefragment-color;
+            text-decoration: $footer-experiencefragment-text-decoration;
+            font-family: $footer-experiencefragment-ul-font-family;
+        }
+    }
+}
+
+%footer-experiencefragment-image {
+    margin: $footer-experiencefragment-image-margin;
+
+    img {
+        width: $footer-experiencefragment-image-width;
+        height: $footer-experiencefragment-image-width;
+    }
+}
+
+%footer-container-child-one{
+    margin-bottom: $footer-container-child-margin;
+}
+
+%footer-container-child-two{
+    width: $footer-container-child-width;
+    ul {
+        margin: $footer-experiencefragment-ul-li-margin;       
+    }    
+}
+
+%footer-container-child-three{
+    display: $footer-container-child-three-display;
+    line-height: $footer-experiencefragment-ul-li-margin;
+    margin: $footer-container-child-three-margin;
+
+    &:nth-child(1) {
+        background-image: url(../resources/icons/facebook.png);
+    }
+
+    &:nth-child(2) {
+        background-image: url(../resources/icons/twitter.png);
+    }
+}
+
+%footer-container-child-three-button {
+    width: $footer-container-child-three-width;
+    height: $footer-container-child-three-width;
+    padding: $footer-experiencefragment-ul-li-margin;
+    overflow: $footer-container-child-three-overflow;
+    text-indent: $footer-container-child-width;
+    display: $footer-container-child-three-display;
+}
+
+%footer-container-child-four{
+    margin: $footer-container-child-four-margin;
+}
+
+%footer-container-child-five{
+    margin-bottom: $footer-experiencefragment-ul-li-margin;
+    a {
+        color: $footer-experiencefragment-color;
+        text-decoration: $footer-experiencefragment-text-decoration;
+
+        &:hover {
+            color: $footer-experiencefragment-color;
+        }
+    }
+}
+
+%footer-container-button {
+    border: $footer-experiencefragment-ul-li-margin;
+    background: $footer-container-button-background;
+}

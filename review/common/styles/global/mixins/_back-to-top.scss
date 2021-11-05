@@ -1,0 +1,29 @@
+%backtotop__cmp-button--primary {
+	font-family: $backtotop-primary-btn-font-family;
+	width: $backtotop-primary-btn-width;
+	display: $backtotop-primary-btn-display;
+	justify-content: $backtotop-primary-btn-justify-content;
+	background: $backtotop-primary-btn-background;
+	font-size: $backtotop-primary-btn-font-size;
+	text-transform: $backtotop-primary-btn-text-transform;
+	text-align: $backtotop-primary-btn-text-align;
+	border: $backtotop-primary-btn-border;
+	margin: $backtotop-primary-btn-margin;
+	letter-spacing: $backtotop-primary-btn-letter-spacing;
+	line-height: $backtotop-primary-btn-line-height;
+	transition: $backtotop-primary-btn-transition;
+	padding: $backtotop-primary-btn-padding;
+	text-decoration: $backtotop-primary-btn-text-decoration;
+	&::after {
+		content: $backtotop-primary-btn-content;
+	}
+	&:focus,
+	&:active,
+	&:hover {
+		background: $backtotop-primary-btn-hover-background;
+	}
+	&__text {
+		color: $backtotop-primary-text-color;
+		padding: $backtotop-primary-text-padding;
+	}
+}

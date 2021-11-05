@@ -1,0 +1,23 @@
+%productnutrients__product-wrapper-primary {
+    margin-right: $productnutrients-primary-product-info-item-wrapper-margin-right;
+    margin-left: $productnutrients-primary-product-info-item-wrapper-margin-left;
+    padding-left: $productnutrients-primary-product-info-item-wrapper-padding-left;
+    padding-right: $productnutrients-primary-product-info-item-wrapper-padding-right;
+}
+
+%productnutrients__product-heading-text-primary {
+    letter-spacing: $productnutrients-primary-product-info-item-heading-text-letter-spacing;
+    margin: $productnutrients-primary-product-info-item-heading-text-margin;
+    font-family: $productnutrients-primary-product-info-item-heading-text-font-family;
+    font-size: $productnutrients-primary-product-info-item-heading-text-font-size;
+    color: $productnutrients-primary-table-tr-first-child-th-color;
+    margin-bottom: $productnutrients-primary-product-info-item-heading-text-margin-bottom;
+    text-align: $productnutrients-primary-product-info-item-heading-text-text-align;
+    font-weight: $productnutrients-primary-product-info-item-heading-text-font-weight;
+}
+%productnutrients__product-item-primary {
+    font-size: $productnutrients-primary-product-info-item-item-font-size;
+    padding: $productnutrients-primary-product-info-item-item-padding;
+    text-align: $productnutrients-primary-product-info-item-item-text-align;
+    color: $productnutrients-primary-product-info-item-item-color;
+}

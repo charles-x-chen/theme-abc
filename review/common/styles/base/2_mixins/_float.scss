@@ -1,0 +1,12 @@
+@mixin clear-both-child($modulo, $max: 50, $clear-none: true) {
+	@for $i from 0 through $max {
+		&:nth-child(#{$i}) {
+			@if $i % ($modulo - 1) == 1 {
+				clear: both;
+			}
+			@else if $clear-none == true {
+				clear: none;
+			}
+		}
+	}
+}

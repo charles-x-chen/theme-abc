@@ -1,0 +1,77 @@
+@mixin font-style($fs-map: 0) {
+	@each $fs-breakpoint, $fs-font-styles in $fs-map {
+		// write a single rule, applicable to all mixinFontBreakPoints
+		@if $fs-breakpoint == null {
+			@include make-font-styles($fs-font-styles);
+		}
+
+		// write a rules for each breakPoint
+		@else {
+			@media screen and (min-width: $fs-breakpoint) {
+				@include make-font-styles($fs-font-styles);
+			}
+		}
+	}
+}
+
+
+$font-size-index: 1;
+$line-height-index: 2;
+$font-weight-index: 3;
+$font-family-index: 4;
+$letter-spacing-index: 5;
+$text-transform-index: 6;
+$max-width-index: 7;
+
+@mixin make-font-styles($fs-font-styles) {
+	$font-size: nth($fs-font-styles, $font-size-index);
+
+	$font-size-px: strip-unit($font-size);
+	@if 'rem' in $font-size {
+		$font-size-px: strip-unit(rem-to-px($font-size));
+	}
+	@else if 'em' in $font-size {
+		$font-size-px: strip-unit(em-to-px($font-size));
+	}
+
+	@if length($fs-font-styles) > ($font-family-index - 1) and nth($fs-font-styles, $font-family-index) != null {
+		font-family: nth($fs-font-styles, $font-family-index);
+	}
+
+	font-size: $font-size;
+
+	@if length($fs-font-styles) > ($font-weight-index - 1) and nth($fs-font-styles, $font-weight-index) != null {
+		font-weight: nth($fs-font-styles, $font-weight-index);
+	}
+
+	@if length($fs-font-styles) > ($letter-spacing-index - 1) and nth($fs-font-styles, $letter-spacing-index) != null {
+		letter-spacing: nth($fs-font-styles, $letter-spacing-index);
+	}
+
+	@if length($fs-font-styles) > ($line-height-index - 1) and nth($fs-font-styles, $line-height-index) != null {
+		$line-height: nth($fs-font-styles, $line-height-index);
+		line-height: $line-height;
+
+		$line-height-no-unit: strip-unit($line-height);
+		@if $line-height-no-unit != $line-height {
+			min-height: $line-height;
+		}
+	}
+
+	@if length($fs-font-styles) > ($max-width-index - 1) and nth($fs-font-styles, $max-width-index) != null {
+		max-width: nth($fs-font-styles, $max-width-index);
+	}
+	@else {
+		// https://baymard.com/blog/line-length-readability
+		@if 'rem' in $font-size {
+			max-width: px-to-rem($font-size-px * 30);
+		}
+		@else if 'em' in $font-size {
+			max-width: px-to-em($font-size-px * 30);
+		}
+	}
+
+	@if length($fs-font-styles) > ($text-transform-index - 1) and nth($fs-font-styles, $text-transform-index) != null {
+		text-transform: nth($fs-font-styles, $text-transform-index);
+	}
+}

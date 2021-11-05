@@ -1,0 +1,3 @@
+@function px-to-rem($px, $coeff: 1) {
+	@return (strip-unit($px) / (strip-unit($base-font-size) * strip-unit($coeff))) * 1rem;
+}
