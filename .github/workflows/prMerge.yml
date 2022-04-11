@@ -1,0 +1,25 @@
+name: PR Auto Merge
+
+on: pull_request:
+push:
+  branches:
+    - main
+    - develop
+    
+jobs:
+  pr_merge:
+    runs-on: ubuntu-latest
+    name: PR Auto Merge
+    
+    steps:
+      - name: Trigger pr-autobuild action for building PR
+        uses: nikhilaii93/pr-autobuild@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.bot_token }}
+          GITHUB_NAME: nikhilaii93
+          DEFAULT_APPROVAL_COUNT_ENV: 0
+          BUILD_COMMENT_ENV: "OK to test"
+          PR_LABEL_ENV: RELEASE_TEST
+          CODEOWNERS: xchen@adobe.com,sgeier@adobe.com
+
+        
